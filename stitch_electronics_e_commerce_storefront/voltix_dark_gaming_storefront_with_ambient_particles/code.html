@@ -1,0 +1,1206 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Sora:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface": "#dfe2ef",
+          "on-primary": "#00354a",
+          "surface-variant": "#31353f",
+          "surface-container-low": "#181b25",
+          "on-tertiary": "#00363d",
+          "primary-fixed-dim": "#7bd0ff",
+          "primary-fixed": "#c4e7ff",
+          "error": "#ffb4ab",
+          "surface-tint": "#7bd0ff",
+          "surface-container-high": "#262a34",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-fixed": "#001f24",
+          "error-container": "#93000a",
+          "inverse-on-surface": "#2c303a",
+          "on-primary-container": "#004965",
+          "outline": "#87929a",
+          "on-background": "#dfe2ef",
+          "on-tertiary-container": "#004b55",
+          "surface-container-highest": "#31353f",
+          "secondary": "#c0c1ff",
+          "on-secondary-container": "#b0b2ff",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "secondary-container": "#3131c0",
+          "on-secondary": "#1000a9",
+          "on-primary-fixed": "#001e2c",
+          "on-error": "#690005",
+          "surface": "#0f131c",
+          "tertiary-fixed-dim": "#00daf3",
+          "primary-container": "#38bdf8",
+          "tertiary": "#00e1fb",
+          "on-primary-fixed-variant": "#004c69",
+          "primary": "#8ed5ff",
+          "on-tertiary-fixed-variant": "#004f58",
+          "tertiary-fixed": "#9cf0ff",
+          "surface-container-lowest": "#0a0e17",
+          "secondary-fixed-dim": "#c0c1ff",
+          "surface-bright": "#353943",
+          "background": "#0f131c",
+          "on-surface-variant": "#bdc8d1",
+          "on-secondary-fixed": "#07006c",
+          "surface-dim": "#0f131c",
+          "tertiary-container": "#00c3d9",
+          "inverse-primary": "#00668a",
+          "outline-variant": "#3e484f",
+          "surface-container": "#1c1f29",
+          "secondary-fixed": "#e1e0ff",
+          "inverse-surface": "#dfe2ef"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "space-xl": "2rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Geist"
+          ],
+          "headline-xl": [
+            "Sora"
+          ],
+          "headline-lg": [
+            "Sora"
+          ],
+          "display-lg-mobile": [
+            "Sora"
+          ],
+          "label-mono": [
+            "Geist"
+          ],
+          "body-sm": [
+            "Geist"
+          ],
+          "body-md": [
+            "Geist"
+          ],
+          "body-lg": [
+            "Geist"
+          ],
+          "headline-xl-mobile": [
+            "Sora"
+          ],
+          "headline-md": [
+            "Sora"
+          ],
+          "display-lg": [
+            "Sora"
+          ],
+          "label-md": [
+            "Geist"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><style>
+@keyframes rgb-border-flow { 0%, 100% { border-color: rgba(0, 240, 255, 0.8); box-shadow: 0 0 25px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.05); } 33% { border-color: rgba(168, 85, 247, 0.8); box-shadow: 0 0 25px rgba(168, 85, 247, 0.4), inset 0 0 15px rgba(168, 85, 247, 0.05); } 66% { border-color: rgba(236, 72, 153, 0.8); box-shadow: 0 0 25px rgba(236, 72, 153, 0.4), inset 0 0 15px rgba(236, 72, 153, 0.05); } }
+@keyframes rgb-glow-pulse { 0%, 100% { box-shadow: 0 0 16px rgba(0, 240, 255, 0.6), 0 0 28px rgba(168, 85, 247, 0.35); } 50% { box-shadow: 0 0 25px rgba(236, 72, 153, 0.7), 0 0 35px rgba(0, 240, 255, 0.45); } }
+@keyframes rgb-aura-flow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+.rgb-glow-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.rgb-glow-card:hover { animation: rgb-border-flow 3s ease-in-out infinite; transform: translateY(-4px); }
+.rgb-glow-button { background: linear-gradient(135deg, #00daf3 0%, #38bdf8 50%, #a855f7 100%); background-size: 200% 200%; transition: all 0.3s ease; }
+.rgb-glow-button:hover { animation: rgb-aura-flow 2s ease infinite, rgb-glow-pulse 2s ease-in-out infinite; transform: translateY(-1px); }
+</style><link rel="stylesheet" href="../../css/voltix.css"></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-36 w-full"><div class="h-9 bg-surface-container-low/80 px-margin text-on-surface-variant flex items-center justify-between border-b border-outline-variant/30"><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary">local_shipping</span><span>Free express shipping on tech orders over $99</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">headset_mic</span><span>24/7 Expert Technical Support</span></div></div><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><a class="flex items-center gap-space-xs hover:text-primary transition-colors" data-path="store-locator" href="#"><span class="material-symbols-outlined text-[16px]">pin_drop</span><span>Store Locator</span></a><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">language</span><span>USD ($) / EN</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div></div></div><div class="h-[67px] max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="Voltix Electronics Logo" class="h-8 w-auto object-contain brightness-125 contrast-125" src="https://lh3.googleusercontent.com/aida/ALJJyrDbnhvm2GTQTzTfYD1dIkrE-36eZ2ljTtCDizRcjzFuBf9-GXVHVHLQGyos7bj7u1J9zZJJ0HX_vi8tzmUgSOXyJj0sklDFdQfT1zF25R5TDSUvXphj6c_qZGRx_4wofgpTIdMRXdb2pHDRKq64VRBRUiX-2tlrTNAmEZxeXkxCXtze3EWhWePJkkifowbgoIk7NP6CchVgiQZfmpysdAniRF62s1mwgP4gJOYtUuM"/><a class="font-headline-md text-headline-md font-bold tracking-tight text-white uppercase flex items-center gap-1.5" data-path="home" href="#"><span>VOLTIX</span><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#00e1fb]"></span></a></div><div class="flex-1 max-w-2xl hidden lg:flex items-center"><div class="w-full flex items-center bg-surface-container rounded-lg p-1 border border-outline-variant/50 focus-within:border-tertiary/70 focus-within:shadow-[0_0_12px_rgba(0,225,251,0.15)] transition-all"><div class="flex items-center px-space-sm py-1 gap-1 text-on-surface-variant font-label-md text-label-md cursor-pointer border-r border-outline-variant/40 hover:text-white"><span>All Hardware</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="flex-1 flex items-center px-space-sm"><span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-white placeholder:text-outline/70" placeholder="Search ultra-gear, RTX GPUs, OLEDs, chipsets..." type="text"/><kbd class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-mono border border-outline-variant/40">/</kbd></div><button class="bg-primary-container text-on-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:bg-tertiary hover:text-on-tertiary transition-all duration-200 flex items-center gap-1 shadow-[0_0_12px_rgba(56,189,248,0.35)]"><span class="material-symbols-outlined text-[16px]">tune</span><span>Search</span></button></div></div><div class="flex items-center gap-space-md shrink-0"><a class="relative flex items-center gap-1.5 p-2 rounded-lg hover:bg-surface-container-high hover:text-white text-on-surface-variant transition-colors border border-transparent hover:border-outline-variant/40" data-path="spec-compare" href="#"><span class="material-symbols-outlined text-[22px] text-tertiary">compare_arrows</span><span class="hidden xl:inline font-label-md text-label-md">Compare</span><span class="absolute top-1 right-1 xl:static bg-surface-container-highest text-tertiary border border-tertiary/30 font-label-sm text-label-sm px-1.5 py-0.2 rounded-full">2</span></a><a class="relative flex items-center gap-1.5 p-2 rounded-lg hover:bg-surface-container-high hover:text-white text-on-surface-variant transition-colors border border-transparent hover:border-outline-variant/40" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px] text-tertiary">favorite</span><span class="hidden xl:inline font-label-md text-label-md">Wishlist</span><span class="absolute top-1 right-1 xl:static bg-surface-container-highest text-white font-label-sm text-label-sm px-1.5 py-0.2 rounded-full">4</span></a><button class="flex items-center gap-space-sm bg-surface-container hover:bg-surface-container-high px-space-md py-2 rounded-lg text-white border border-outline-variant/50 hover:border-primary-container/60 transition-all shadow-sm"><div class="relative"><span class="material-symbols-outlined text-[22px] text-tertiary">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-primary-container text-on-primary font-label-sm text-label-sm w-4 h-4 rounded-full flex items-center justify-center font-bold shadow-[0_0_8px_#38bdf8]">2</span></div><div class="text-left leading-tight hidden sm:block"><div class="font-label-sm text-label-sm text-on-surface-variant">Cart (2)</div><div class="font-label-md text-label-md font-bold text-white font-mono">$349.00</div></div></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40 ring-offset-2 ring-offset-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBihZ8AwpGHtQaOczH4-MQPS41mW5oxUzXg-niItSaZU-D2E0b7KGIUGvhyz65wJy2uvSNdSQ9-W2qOY2y98ptjLOaJJCLWVcwJtQnkaM9EEypSRW596N5EeNF3Lju4m11HZzbRnUBVLGZ1CzJl_AbIsY4hpXTy9Nol__jJ7aCrs6mV3TL9C-drJkfeTAo3RyynKSsfpb9mtCh5i9KyQQGl3IxOJcrT1obEJab3BmQ"/><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer hover:text-white">expand_more</span></div></div></div><nav class="h-11 bg-surface-container-lowest/80 border-t border-outline-variant/30 max-w-[1360px] mx-auto px-margin flex items-center justify-between" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="flex items-center gap-space-lg"><button class="flex items-center gap-space-xs font-label-lg text-label-lg text-white hover:text-tertiary transition-colors py-1"><span class="material-symbols-outlined text-[20px] text-tertiary">menu</span><span>All Categories</span></button><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="smartphones" href="#">Smartphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="laptops-and-computing" href="#">Laptops &amp; Computing</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="audio-and-headphones" href="#">Audio &amp; Headphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="smart-home" href="#">Smart Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="gaming-gear" href="#">Gaming Gear</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="wearables" href="#">Wearables</a></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1.5 font-label-md text-label-md text-tertiary hover:text-white font-bold py-1 px-3 rounded-full bg-tertiary/10 border border-tertiary/30 shadow-[0_0_10px_rgba(0,225,251,0.15)] transition-all" data-path="deals-and-clearance" href="#"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span>Deals &amp; Clearance</a></div></nav></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow / Decorative Backdrop layer -->
+<div class="relative w-full overflow-hidden" id="hero-backdrop-container">
+<!-- Interactive Ambient Particles Canvas Background -->
+<canvas class="absolute inset-0 w-full h-full pointer-events-none z-0" id="hero-particles-canvas"></canvas>
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[500px] bg-gradient-to-tr from-primary-container/20 via-tertiary/10 to-transparent blur-[120px] pointer-events-none rounded-full"></div>
+<div class="absolute top-20 right-10 w-96 h-96 bg-secondary-container/10 blur-[100px] pointer-events-none rounded-full"></div>
+<!-- FLAGSHIP HERO SECTION -->
+<section class="max-w-[1360px] mx-auto px-margin pt-space-lg pb-space-xl relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left: Copy & Specifications -->
+<div class="lg:col-span-6 flex flex-col items-start relative z-10">
+<!-- Availability Pill & Series Tag -->
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high border border-tertiary/40 text-tertiary font-label-sm text-label-sm font-semibold tracking-wide shadow-[0_0_10px_rgba(0,225,251,0.2)]">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse shadow-[0_0_6px_#00e1fb]"></span>
+              In Stock &amp; Ships Today
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider bg-surface-container-high/80 border border-outline-variant/30 px-2.5 py-1 rounded-full font-mono">
+              GEN-4 ARCHITECTURE
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl font-bold tracking-tight text-white mb-space-sm">
+            Voltix ProBook Studio 16
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg">
+            Engineered with the revolutionary Apex-16 octa-cluster compute engine, 120Hz ProMotion XDR panel, and 400GB/s unified memory pipeline. Extreme performance engineered for creators and engineers.
+          </p>
+<!-- Key Mini Spec Pills Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs w-full max-w-xl mb-space-lg">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col border border-outline-variant/40 hover:border-tertiary/40 transition-colors">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Silicon</span>
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">3.2 GHz</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Apex-16 Ultra</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col border border-outline-variant/40 hover:border-tertiary/40 transition-colors">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Memory</span>
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">36 GB</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Unified LPDDR5X</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col border border-outline-variant/40 hover:border-tertiary/40 transition-colors">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Storage</span>
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">1 TB</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">7.4 GB/s NVMe</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col border border-outline-variant/40 hover:border-tertiary/40 transition-colors">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Endurance</span>
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">22 hrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">99.6Wh Lithium</span>
+</div>
+</div>
+<!-- Price & Actions Group -->
+<div class="flex flex-wrap items-center gap-space-md w-full">
+<div class="flex flex-col mr-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold font-mono">Starting configuration</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white font-mono">$1,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">or $83.29/mo for 24 mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-1 sm:flex-initial">
+<button class="bg-primary-container text-on-primary hover:bg-tertiary hover:text-on-tertiary font-label-lg text-label-lg px-space-lg py-3 rounded-lg shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-200 flex items-center justify-center gap-2 group font-bold">
+<span>Shop Flagship</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-surface-container hover:bg-surface-container-high text-white font-label-lg text-label-lg px-space-md py-3 rounded-lg transition-colors flex items-center gap-1.5 border border-outline-variant/50 hover:border-tertiary/40">
+<span class="material-symbols-outlined text-[18px] text-tertiary">balance</span>
+<span>Compare Specs</span>
+</button>
+</div>
+</div>
+<!-- Quick Hardware Assurance Micro-strip -->
+<div class="mt-space-md flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span> Factory Calibrated ΔE &lt; 1</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-primary">speed</span> 1600 Nits Peak HDR</span>
+</div>
+</div>
+<!-- Right: Isometric Hardware Showcase Card -->
+<div class="lg:col-span-6 relative z-10">
+<div class="relative bg-surface-container-low/90 backdrop-blur-md p-space-md rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] border border-outline-variant/40 hover:border-tertiary/40 transition-all duration-300 overflow-hidden group">
+<div class="aspect-[16/10] w-full rounded-xl overflow-hidden bg-surface-container-lowest relative flex items-center justify-center border border-outline-variant/30">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500 brightness-95 contrast-105" data-alt="Sleek space titanium 16-inch high-performance workstation laptop open at a 105 degree angle with vibrant edge-to-edge colorful 4K wallpaper displayed on screen, isolated floating view, dramatic studio lighting with subtle electric blue rim light and soft ambient reflections, precision hardware aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiYrfwLTU048HGT15Y7tujw7hXQmGBk8raAyHK_t_eFA3huaUZJgdJPwG8A67WccqGmiz5ch-u8Abjcs9lv1RIVArs-5V2LhYtRdfLFb56i8Z-UKN_pNSAWgP-AKrNCjBJQJP77Ql9l0KAkSh3HRZrs-PJv9dG6zZZcnYEoTZcM0ydcin5HLd5uYzW4IQl4mCDUfH6Cr1r_xvAa2ofOUBgZT-YmliB-fPaEpSXsAQ"/>
+<!-- Floating Live Benchmark Badge -->
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-1.5 rounded-lg shadow-lg flex items-center gap-2 border border-outline-variant/40">
+<span class="material-symbols-outlined text-[18px] text-tertiary">memory</span>
+<div>
+<div class="font-label-sm text-label-sm text-white font-bold leading-none">Geekbench 6 Multi</div>
+<div class="font-label-sm text-label-sm text-tertiary font-mono leading-none mt-0.5">21,490 pts (+34%)</div>
+</div>
+</div>
+<!-- Quick Spec Overlay Pill -->
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 text-white backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1.5 border border-outline-variant/40">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#00e1fb]"></span>
+<span class="font-mono text-[11px]">Space Titanium Finish</span>
+</div>
+</div>
+<!-- Mini Carousel Indicators -->
+<div class="mt-space-sm flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Slide 1" class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_6px_#00e1fb]"></button>
+<button aria-label="Slide 2" class="w-2.5 h-2.5 rounded-full bg-surface-container-highest hover:bg-outline transition-colors"></button>
+<button aria-label="Slide 3" class="w-2.5 h-2.5 rounded-full bg-surface-container-highest hover:bg-outline transition-colors"></button>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-mono">Studio 16 Pro Series</span>
+</div>
+<a class="font-label-sm text-label-sm text-tertiary font-bold hover:underline flex items-center gap-0.5" href="#">
+<span>360° Interactive View</span>
+<span class="material-symbols-outlined text-[14px]">view_in_ar</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- CATEGORY NAVIGATION PILLS (Horizontal Scroll) -->
+<section class="w-full bg-surface-container-lowest/90 py-space-md border-y border-outline-variant/30">
+<div class="max-w-[1360px] mx-auto px-margin">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Browse Technical Hardware</span>
+<a class="font-label-sm text-label-sm text-tertiary hover:underline font-semibold flex items-center gap-0.5" href="#">
+<span>All 32 Categories</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1.5 scrollbar-none">
+<!-- Active Pill -->
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-[0_0_12px_rgba(56,189,248,0.4)] font-bold transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined text-[18px]">laptop_chromebook</span>
+<span>Laptops &amp; Computing</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">smartphone</span>
+<span>Smartphones</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">headphones</span>
+<span>Audio Gear</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">sports_esports</span>
+<span>Gaming</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">nest_clock_farsight_analog</span>
+<span>Smart Home</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">watch</span>
+<span>Wearables</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">photo_camera</span>
+<span>Cameras &amp; Lenses</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">developer_board</span>
+<span>Components &amp; GPUs</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-white font-label-md text-label-md shrink-0 border border-outline-variant/40 hover:border-tertiary/40 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cable</span>
+<span>High-Speed Cables</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FLASH DEALS STRIP -->
+<section class="max-w-[1360px] mx-auto px-margin py-space-xl w-full">
+<div class="bg-surface-container-low/95 rounded-2xl p-space-lg shadow-[0_8px_32px_rgba(0,0,0,0.6)] border border-outline-variant/40 overflow-hidden relative">
+<div class="absolute -top-24 -right-24 w-80 h-80 bg-tertiary/10 blur-3xl pointer-events-none rounded-full"></div>
+<!-- Flash Top Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md mb-space-md border-b border-outline-variant/30">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary/20 border border-tertiary/40 flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(0,225,251,0.25)]">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md font-bold text-white">Flash Velocity Deals</h2>
+<span class="bg-tertiary text-on-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Limited</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Allocated wholesale tech batches. Expiring upon stock exhaustion.</p>
+</div>
+</div>
+<!-- Live Countdown Timer -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-2 rounded-xl border border-outline-variant/40">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+            Resets in:
+          </span>
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold font-mono text-white">
+<span class="bg-surface-container-highest px-2 py-1 rounded text-white" id="deal-hours">04</span>
+<span class="text-tertiary">:</span>
+<span class="bg-surface-container-highest px-2 py-1 rounded text-white" id="deal-mins">27</span>
+<span class="text-tertiary">:</span>
+<span class="bg-surface-container-highest px-2 py-1 rounded text-tertiary shadow-[0_0_8px_rgba(0,225,251,0.3)]" id="deal-secs">01</span>
+</div>
+</div>
+</div>
+<!-- 3 Flash Deal Products -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Flash Deal 1 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between group hover:border-tertiary/50 border border-outline-variant/30 hover:shadow-[0_0_20px_rgba(0,225,251,0.15)] transition-all duration-300">
+<div>
+<div class="relative aspect-video rounded-lg overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold px-2 py-0.5 rounded shadow-[0_0_8px_#00e1fb]">-35% FLASH</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform brightness-90 contrast-110" data-alt="High-end noise canceling studio wireless headphones in matte charcoal black resting on an aluminum headphone stand, premium metal hinges, warm accent lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-QiQN7OGEnFn-O3ZNV1rMAKQxe8SfmBQRjh_U4X0mv_S18kSJlqMxY0Z_qMSfq6hIWbdpdGAI6MiTJOUT2tbaH7BLsavw-5RkdGbMS0Bne4342yQa8lqUBZOH8bnc1Nppa1VDFJWUQ8acrYHKerusVKBUyNP6IBLXzQmUgXVuQG9_TDF0P4L52II8nahLqrYBhekPuWlDjh5sg5G9HEiKEBTBvU-24NdtqsGK-EU"/>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider font-mono">Pro Audio</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white mb-1">Voltix SonicPulse ANC Studio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Dual 40mm Beryllium dynamic drivers with hybrid ANC.</p>
+<div class="flex items-baseline gap-space-xs mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary font-mono">$189.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$299.00</span>
+</div>
+</div>
+<div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-1.5">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500 shadow-[0_0_8px_#00e1fb]" style="width: 82%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-space-sm">
+<span class="text-tertiary font-bold font-mono">82% Claimed</span>
+<span class="text-on-surface-variant font-mono">Only 9 units left</span>
+</div>
+<button class="w-full bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold">
+<span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+<span>Claim Deal</span>
+</button>
+</div>
+</div>
+<!-- Flash Deal 2 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between group hover:border-tertiary/50 border border-outline-variant/30 hover:shadow-[0_0_20px_rgba(0,225,251,0.15)] transition-all duration-300">
+<div>
+<div class="relative aspect-video rounded-lg overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold px-2 py-0.5 rounded shadow-[0_0_8px_#00e1fb]">-28% FLASH</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform brightness-90 contrast-110" data-alt="Ultra-slim high refresh rate portable OLED monitor sitting on a desktop workspace with USB-C cables, crystal clear sharp display, modern tech setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQs96Ec2ovmluAN4GZsrQEbbtXWpZa1UUsm7DaZN5WSCyMYuTAgPFn7pvB__RgdLC_rnq1Ot0rxidyi0IYb4rGvZ-jo8HCIr6ZGnzHCXPfE-lfSNbUtVP5oN7n4yVe9roIg7mB5vUIelLqeXhS5oH4dVn_rKgig_WXworhgTuW3yFiLcyqfAJgiwgjlKlaBuuzZhJo2C93UxJ2N2XrMyDpiLyJHwROA2qlmE4tVac"/>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider font-mono">Displays</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white mb-1">Voltix Vision 16 4K OLED</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">100% DCI-P3 color gamut, 600 nits, single-cable Type-C.</p>
+<div class="flex items-baseline gap-space-xs mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary font-mono">$359.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$499.00</span>
+</div>
+</div>
+<div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-1.5">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500 shadow-[0_0_8px_#00e1fb]" style="width: 68%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-space-sm">
+<span class="text-tertiary font-bold font-mono">68% Claimed</span>
+<span class="text-on-surface-variant font-mono">16 units remaining</span>
+</div>
+<button class="w-full bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold">
+<span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+<span>Claim Deal</span>
+</button>
+</div>
+</div>
+<!-- Flash Deal 3 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col justify-between group hover:border-tertiary/50 border border-outline-variant/30 hover:shadow-[0_0_20px_rgba(0,225,251,0.15)] transition-all duration-300">
+<div>
+<div class="relative aspect-video rounded-lg overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-sm text-label-sm font-bold px-2 py-0.5 rounded shadow-[0_0_8px_#38bdf8]">-40% CLEARANCE</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform brightness-90 contrast-110" data-alt="Futuristic low-profile mechanical keyboard with transparent keycaps, RGB backlighting glowing in cold ice blue, dark minimalist studio surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWyG1x46AygEuLx6qQkj8trmpae2nqQzeYFJ7wmLNTfj_KgZ6basZjzy6g33yCNUvZDyWBPLyYNqCh8Au0jYewwjt7O86fa9fkMcUYABKFW78bVRLpJEwOQ1LPzJCVAirR7-xwp8-YcwDgq9BLwXN5BbuytCt-zxSI7LRTYhZpE-OE4zz9hCpnGKK9n3TWohGr9J01Aiy4jsfR8iNDTbTPHRm-AJmaZzJ1MO0cw_g"/>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider font-mono">Peripherals</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white mb-1">Voltix CyberKey Pro 75</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Hot-swappable tactile switches, wireless tri-mode connection.</p>
+<div class="flex items-baseline gap-space-xs mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary font-mono">$119.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$199.00</span>
+</div>
+</div>
+<div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-1.5">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500 shadow-[0_0_8px_#00e1fb]" style="width: 94%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-space-sm">
+<span class="text-tertiary font-bold font-mono">94% Claimed</span>
+<span class="text-error font-bold font-mono">Only 2 left!</span>
+</div>
+<button class="w-full bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold">
+<span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+<span>Claim Deal</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRENDING & BEST SELLERS 4-COLUMN GRID -->
+<section class="max-w-[1360px] mx-auto px-margin pb-space-xl w-full">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase font-bold tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Verified Top Performance</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-white">Trending Hardware &amp; Best Sellers</h2>
+</div>
+<!-- Filter tabs -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl border border-outline-variant/40">
+<button class="bg-surface-container-high text-white shadow-sm font-label-sm text-label-sm px-3 py-1.5 rounded-lg font-bold border border-outline-variant/40">All Products</button>
+<button class="text-on-surface-variant hover:text-white font-label-sm text-label-sm px-3 py-1.5 rounded-lg transition-colors">Flagship Mobile</button>
+<button class="text-on-surface-variant hover:text-white font-label-sm text-label-sm px-3 py-1.5 rounded-lg transition-colors">High-FPS Gaming</button>
+<button class="text-on-surface-variant hover:text-white font-label-sm text-label-sm px-3 py-1.5 rounded-lg transition-colors">Studio Audio</button>
+</div>
+</div>
+<!-- 4-Column Responsive Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Product Card 1 -->
+<div class="bg-surface-container p-space-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/50 hover:shadow-[0_0_24px_rgba(0,225,251,0.15)] transition-all duration-300 flex flex-col justify-between group rgb-glow-card">
+<div>
+<!-- Card Image Container -->
+<div class="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold shadow-[0_0_8px_#38bdf8]">Top Seller</span>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-sm text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high flex items-center justify-center transition-colors border border-outline-variant/30" title="Add to Wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-95" data-alt="Flagship smartphone in deep titanium with triple camera bump on pure light gray gradient background, clean angle studio view with reflective glass edge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1do_JxPti4qdKr-eRYAKZBHfhmZkD-ss4a13__d6B8V1x_aQTROTWQB4PiHEMSNyBnVzdvn5nfkNfWhSyV-u9Yw26h4b9JfY4KGjTMjHX9Gb1Go2JnocCNRSIV4wk1dXmaFRPBjEkMWPIuQ1RZMrrAJMv1rcGaawGJ5jS5gW5scsm9-3-qpALy-0n3RZcAgc4eE-gLVi-zhN1qbo3KdR2V41qIR1AlAcfADctrW8"/>
+</div>
+<!-- Rating -->
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-white font-bold font-mono">4.9</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">(1,482)</span>
+</div>
+<!-- Title -->
+<h3 class="font-headline-sm text-headline-sm font-bold text-white group-hover:text-tertiary transition-colors leading-tight mb-space-xs line-clamp-1">
+            Voltix Apex Phone 16 Pro
+          </h3>
+<!-- Spec Tags -->
+<div class="flex flex-wrap gap-1 mb-space-md">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">A18 Pro SoC</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">120Hz LTPO</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">50MP Periscope</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-white font-mono">$1,099</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$1,199</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded font-mono">Save $100</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs">
+<button class="col-span-4 bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold rgb-glow-button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="col-span-1 bg-surface-container-high hover:bg-surface-container-highest text-white rounded-lg flex items-center justify-center transition-colors border border-outline-variant/40" title="Compare Specs">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container p-space-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/50 hover:shadow-[0_0_24px_rgba(0,225,251,0.15)] transition-all duration-300 flex flex-col justify-between group rgb-glow-card">
+<div>
+<div class="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-bold border border-secondary/30">-25% OFF</span>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-sm text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high flex items-center justify-center transition-colors border border-outline-variant/30" title="Add to Wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-95" data-alt="Premium wireless noise cancelling over-ear headphones with silver metallic accents resting on architectural concrete block, diffused daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-NrI_LrYEXtJuvYfm8khzWev4unJc7k7cVQuOeuhgrKalOe8Dz5QALQn36G3pH9skFVxAELKQUpGDkPMVq8KSmISl3IadlrtYp0-ETnVQo5DsPdaMuiAgzmYyiDPZh0ZQnnNIx7O0wj7LZtN6og6BWl58CDTXOkLIRdu8C_H7UNymej0uKPPbm7BNXnSW8uTyTBU5m5fpgtPOP1g6pKB8TtiTc3xYzXEKN9ti3lA"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-sm text-label-sm text-white font-bold font-mono">4.8</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">(890)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white group-hover:text-tertiary transition-colors leading-tight mb-space-xs line-clamp-1">
+            AuraSound Studio Max
+          </h3>
+<div class="flex flex-wrap gap-1 mb-space-md">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">Active ANC</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">40h Battery</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">Dolby Atmos</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-white font-mono">$299</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$399</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded font-mono">Save $100</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs">
+<button class="col-span-4 bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold rgb-glow-button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="col-span-1 bg-surface-container-high hover:bg-surface-container-highest text-white rounded-lg flex items-center justify-center transition-colors border border-outline-variant/40" title="Compare Specs">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container p-space-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/50 hover:shadow-[0_0_24px_rgba(0,225,251,0.15)] transition-all duration-300 flex flex-col justify-between group rgb-glow-card">
+<div>
+<div class="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-surface-container-highest text-white font-label-sm text-label-sm px-2 py-0.5 rounded font-bold border border-outline-variant/40">New Drop</span>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-sm text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high flex items-center justify-center transition-colors border border-outline-variant/30" title="Add to Wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-95" data-alt="Rugged outdoor smartwatch with orange alpine loop strap, sapphire crystal touch screen displaying biometric heart rate and elevation, crisp close-up." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDWDAw_4lZpGzfJvHbFnq4tfQlKPqu71wY0ZYt6XKocAT8WyHtrwkR4l9wAQ2cLcdFZAbP6cUuqKfe4lqHGd5_PUGJivRZcrMghFNGqbITe32UN6qDAt5E8C5-MV-Mm3e6pxVrAJfttfS5DkPngFM0qFDEPbBxvgB6T1ri1ORNxzRKM_0BnILWOQ3OA5TaXrVFQ63l0lxWnzqCyhNNL8gEdUo1X4sBvuHb9N90rqE"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-white font-bold font-mono">5.0</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">(312)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white group-hover:text-tertiary transition-colors leading-tight mb-space-xs line-clamp-1">
+            Voltix Horizon Chrono Ultra
+          </h3>
+<div class="flex flex-wrap gap-1 mb-space-md">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">Dual GPS</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">100m Water</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">ECG + SpO2</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-white font-mono">$799</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$849</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded font-mono">Save $50</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs">
+<button class="col-span-4 bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold rgb-glow-button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="col-span-1 bg-surface-container-high hover:bg-surface-container-highest text-white rounded-lg flex items-center justify-center transition-colors border border-outline-variant/40" title="Compare Specs">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container p-space-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/50 hover:shadow-[0_0_24px_rgba(0,225,251,0.15)] transition-all duration-300 flex flex-col justify-between group rgb-glow-card">
+<div>
+<div class="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-container-lowest mb-space-sm flex items-center justify-center border border-outline-variant/30">
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold shadow-[0_0_8px_#38bdf8]">Bestseller</span>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-low/80 backdrop-blur-sm text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high flex items-center justify-center transition-colors border border-outline-variant/30" title="Add to Wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-95" data-alt="Next-generation wireless gaming console controller in matte storm white with textured grips, tactile triggers and subtle LED indicator light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Yy6tXXrRyFDF4OZ4hiYcd37rYPPBJdpSTLcXkoKBFu4TElAqGscG5-MDiMKwkf9LW3862B9k5dd1Y1VxNoPJB0WsVFKSlYdY4YytqidWxkDE85b-yN59WBl7iKyL11TL4V8n9sXzVwxor8BH2mQf4iaPGqQpdQS3nj8UdurwaLyyxIf0SBb4QpKOD6sxNRd3dyIVB1bL_0ZxpG6qgFY_bpU-Wpfw5xx88KUM5w0"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-white font-bold font-mono">4.9</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">(2,110)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white group-hover:text-tertiary transition-colors leading-tight mb-space-xs line-clamp-1">
+            Voltix DualStrike Elite Controller
+          </h3>
+<div class="flex flex-wrap gap-1 mb-space-md">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">Hall Effect Sticks</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">0.5ms Latency</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/30">4 Paddles</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-space-sm pt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-white font-mono">$179</span>
+<span class="font-body-sm text-body-sm text-outline line-through font-mono">$219</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded font-mono">Save $40</span>
+</div>
+<div class="grid grid-cols-5 gap-space-xs">
+<button class="col-span-4 bg-primary-container hover:bg-tertiary hover:text-on-tertiary text-on-primary py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1 transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] font-bold rgb-glow-button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+<button class="col-span-1 bg-surface-container-high hover:bg-surface-container-highest text-white rounded-lg flex items-center justify-center transition-colors border border-outline-variant/40" title="Compare Specs">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE SPEC COMPARE SPOTLIGHT -->
+<section class="max-w-[1360px] mx-auto px-margin pb-space-xl w-full">
+<div class="bg-surface-container-low/95 rounded-3xl p-space-lg md:p-space-xl border border-outline-variant/40 shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider font-mono">Direct Head-to-Head Comparison</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-white mt-1">Flagship Smartphone Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Evaluate thermal throttling limits, display nit brightness, and sensor sizes without marketing hyperbole.</p>
+</div>
+<!-- Comparison Container -->
+<div class="bg-surface-container rounded-2xl border border-outline-variant/40 overflow-hidden shadow-lg">
+<!-- Table Header (Products) -->
+<div class="grid grid-cols-12 bg-surface-container-high/80 p-space-md items-center border-b border-outline-variant/30">
+<div class="col-span-4 font-label-md text-label-md text-white font-bold uppercase tracking-wider font-mono">
+            Technical Parameter
+          </div>
+<div class="col-span-4 text-center">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider font-mono">Candidate A</span>
+<div class="font-headline-sm text-headline-sm font-bold text-white">Voltix Apex 16 Pro</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider font-mono">Candidate B</span>
+<div class="font-headline-sm text-headline-sm font-bold text-white">Titan Ultra 5G</div>
+</div>
+</div>
+<!-- Spec Rows -->
+<div class="divide-y divide-outline-variant/20 flex flex-col">
+<!-- Row 1: Display -->
+<div class="grid grid-cols-12 p-space-md items-center hover:bg-surface-container-high/50 transition-colors">
+<div class="col-span-4 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">phone_iphone</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Display Matrix</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Panel tech &amp; Peak Nits</div>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">6.7" LTPO 120Hz OLED</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">2,600 nits peak / Dolby Vision</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg text-white font-semibold">6.8" AMOLED 144Hz</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">2,400 nits peak / HDR10+</div>
+</div>
+</div>
+<!-- Row 2: Chipset -->
+<div class="grid grid-cols-12 p-space-md items-center bg-surface-container-lowest/40 hover:bg-surface-container-high/50 transition-colors">
+<div class="col-span-4 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">memory</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Compute Silicon</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lithography &amp; NPU TOPS</div>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-primary">A18 Pro (3nm TSMC N3E)</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">38 TOPS On-device Neural Engine</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg text-white font-semibold">Snapdragon 8 Gen 3</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">45 TOPS Hexagon NPU</div>
+</div>
+</div>
+<!-- Row 3: Camera Optics -->
+<div class="grid grid-cols-12 p-space-md items-center hover:bg-surface-container-high/50 transition-colors">
+<div class="col-span-4 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">photo_camera</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Camera Sensors</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Primary &amp; Periscope Zoom</div>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-white">50MP (1/1.28") + 5X Optical</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">4K 120fps ProRes Log recording</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">200MP (1/1.3") + 5X Optical</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">8K 30fps / 100x Space Zoom</div>
+</div>
+</div>
+<!-- Row 4: Battery & Charging -->
+<div class="grid grid-cols-12 p-space-md items-center bg-surface-container-lowest/40 hover:bg-surface-container-high/50 transition-colors">
+<div class="col-span-4 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">battery_charging_full</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Battery Architecture</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Capacity &amp; Wired Wattage</div>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg text-white font-semibold font-mono">4,685 mAh</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">30W Wired / 25W MagSafe</div>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-tertiary font-mono">5,000 mAh</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-mono">45W Super Fast 2.0 Wired</div>
+</div>
+</div>
+<!-- Row 5: Price & Decision CTAs -->
+<div class="grid grid-cols-12 p-space-md items-center bg-surface-container-high/70 border-t border-outline-variant/30">
+<div class="col-span-4 font-label-md text-label-md font-bold text-white font-mono">
+              Config: 256GB Unlocked
+            </div>
+<div class="col-span-4 text-center flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">$1,099</span>
+<button class="bg-primary-container text-on-primary hover:bg-tertiary hover:text-on-tertiary px-space-md py-1.5 rounded-lg font-label-sm text-label-sm font-bold transition-all shadow-[0_0_12px_rgba(56,189,248,0.3)] flex items-center gap-1">
+<span>Select Apex 16</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<div class="col-span-4 text-center flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-white font-mono">$1,199</span>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-white px-space-md py-1.5 rounded-lg font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1 border border-outline-variant/40">
+<span>Select Titan</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VALUE & TRUST PILLARS BAR -->
+<section class="w-full bg-surface-container-lowest/90 py-space-xl border-y border-outline-variant/30">
+<div class="max-w-[1360px] mx-auto px-margin">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Feature 1 -->
+<div class="flex items-start gap-space-md rgb-glow-card">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-tertiary shrink-0 shadow-[0_0_12px_rgba(0,225,251,0.15)]">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white mb-1">Official 2-Year Warranty</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Genuine OEM coverage with zero deductible for manufacturer hardware flaws.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-start gap-space-md rgb-glow-card">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary shrink-0 shadow-[0_0_12px_rgba(142,213,255,0.15)]">
+<span class="material-symbols-outlined text-[28px]">flight_takeoff</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white mb-1">Free Next-Day Air</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Orders confirmed by 3 PM EST fly express with real-time temperature-safe tracking.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-start gap-space-md rgb-glow-card">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-tertiary shrink-0 shadow-[0_0_12px_rgba(0,225,251,0.15)]">
+<span class="material-symbols-outlined text-[28px]">cached</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white mb-1">30-Day Hassle-Free</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Don't love the silicon or form factor? Print complimentary return shipping in 1 click.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="flex items-start gap-space-md rgb-glow-card">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary shrink-0 shadow-[0_0_12px_rgba(142,213,255,0.15)]">
+<span class="material-symbols-outlined text-[28px]">headset_mic</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white mb-1">24/7 Pro Tech Support</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct access to Level 3 certified systems engineers for setup and diagnosis.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SOCIAL PROOF & CUSTOMER REVIEWS SPOTLIGHT -->
+<section class="max-w-[1360px] mx-auto px-margin py-space-xl w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase font-bold tracking-wider mb-1 font-mono">
+<span class="material-symbols-outlined text-[16px]">reviews</span>
+<span>Verified Pro Customer Feedback</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-white">Trusted by Engineers &amp; Studios</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-white font-mono">4.92 / 5.0 Global Rating</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">From 38,400+ benchmarked buyers</div>
+</div>
+</div>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container p-space-lg rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-white font-normal mb-space-md italic">
+            "The ProBook Studio 16 handles 8K REDCODE raw timelines without dropping a single frame. Voltix delivered it next morning in ruggedized shockproof flight packaging."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-label-md text-label-md shadow-[0_0_8px_rgba(56,189,248,0.4)]">
+            MR
+          </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Marcus R.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Lead Colorist, CineWorks SF</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary ml-auto" title="Verified Purchase">verified</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container p-space-lg rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-white font-normal mb-space-md italic">
+            "Voltix's technical comparison matrix is genuinely honest. The battery life specs on the Apex 16 Pro matched our internal hardware lab tests down to the minute."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-white font-bold flex items-center justify-center font-label-md text-label-md border border-outline-variant/40">
+            EL
+          </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Dr. Elena Lin</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Embedded Systems Architect</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary ml-auto" title="Verified Purchase">verified</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container p-space-lg rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)] border border-outline-variant/40 hover:border-tertiary/40 transition-colors flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-white font-normal mb-space-md italic">
+            "Had a driver handshake mismatch with an external PCIe capture card. Called support at 2 AM and was speaking to an actual hardware specialist in 45 seconds."
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-white font-bold flex items-center justify-center font-label-md text-label-md border border-secondary/30">
+            SK
+          </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-white">Stefan Koenig</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Twitch Partner &amp; Builder</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary ml-auto" title="Verified Purchase">verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BRAND HARDWARE PARTNER MARQUEE -->
+<section class="w-full bg-surface-container-lowest/80 py-space-lg border-t border-outline-variant/30">
+<div class="max-w-[1360px] mx-auto px-margin">
+<div class="flex items-center justify-between gap-space-lg flex-wrap opacity-50 hover:opacity-100 transition-opacity duration-300">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tighter text-white uppercase hover:text-tertiary transition-colors">AMD RYZEN</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-white uppercase hover:text-tertiary transition-colors">INTEL ULTRA</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-wider text-white uppercase hover:text-tertiary transition-colors">NVIDIA RTX</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-white uppercase hover:text-tertiary transition-colors">SONY AUDIO</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-widest text-white uppercase hover:text-tertiary transition-colors">SAMSUNG EVO</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tighter text-white uppercase hover:text-tertiary transition-colors">LOGITECH G</span>
+</div>
+</div>
+</section>
+<!-- Ambient Particles Canvas Script -->
+<script>
+    (function initHeroParticles() {
+      const canvas = document.getElementById('hero-particles-canvas');
+      const container = document.getElementById('hero-backdrop-container');
+      if (!canvas || !container) return;
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+      let animationFrameId;
+
+      const colors = ['#00F0FF', '#38BDF8', '#818CF8', '#A855F7'];
+      const particleCount = 72;
+      const particles = [];
+
+      const mouse = {
+        x: null,
+        y: null,
+        radius: 130,
+        active: false
+      };
+
+      function resize() {
+        const rect = container.getBoundingClientRect();
+        width = canvas.width = rect.width;
+        height = canvas.height = rect.height;
+      }
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.radius = 1 + Math.random() * 1.5;
+          this.baseVx = (Math.random() - 0.5) * (prefersReducedMotion ? 0.1 : 0.45);
+          this.baseVy = (Math.random() - 0.5) * (prefersReducedMotion ? 0.1 : 0.45);
+          this.vx = this.baseVx;
+          this.vy = this.baseVy;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.alpha = 0.25 + Math.random() * 0.55;
+          this.pulseSpeed = 0.015 + Math.random() * 0.02;
+          this.pulseVal = Math.random() * Math.PI * 2;
+        }
+
+        update() {
+          this.pulseVal += this.pulseSpeed;
+          const currentAlpha = Math.max(0.1, this.alpha + Math.sin(this.pulseVal) * 0.2);
+
+          // Mouse influence
+          if (mouse.active && mouse.x !== null && mouse.y !== null) {
+            const dx = mouse.x - this.x;
+            const dy = mouse.y - this.y;
+            const dist = Math.hypot(dx, dy);
+
+            if (dist < mouse.radius && dist > 0) {
+              const force = (mouse.radius - dist) / mouse.radius;
+              const angle = Math.atan2(dy, dx);
+              // subtle repulsion / deflection
+              this.vx -= Math.cos(angle) * force * 0.6;
+              this.vy -= Math.sin(angle) * force * 0.6;
+            }
+          }
+
+          // friction back to base drift
+          this.vx = this.vx * 0.94 + this.baseVx * 0.06;
+          this.vy = this.vy * 0.94 + this.baseVy * 0.06;
+
+          this.x += this.vx;
+          this.y += this.vy;
+
+          // Wrap edges
+          if (this.x < -10) this.x = width + 10;
+          if (this.x > width + 10) this.x = -10;
+          if (this.y < -10) this.y = height + 10;
+          if (this.y > height + 10) this.y = -10;
+
+          return currentAlpha;
+        }
+
+        draw(alpha) {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.globalAlpha = alpha;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = this.color;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+      }
+
+      function init() {
+        resize();
+        particles.length = 0;
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function drawLines() {
+        const maxDist = 100;
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.hypot(dx, dy);
+
+            if (dist < maxDist) {
+              const alpha = (1 - dist / maxDist) * 0.18;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = '#00e1fb';
+              ctx.globalAlpha = alpha;
+              ctx.lineWidth = 0.8;
+              ctx.stroke();
+            }
+          }
+
+          // Connecting lines to cursor if close
+          if (mouse.active && mouse.x !== null && mouse.y !== null) {
+            const mdx = mouse.x - particles[i].x;
+            const mdy = mouse.y - particles[i].y;
+            const mdist = Math.hypot(mdx, mdy);
+            if (mdist < mouse.radius) {
+              const mouseAlpha = (1 - mdist / mouse.radius) * 0.35;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.strokeStyle = '#38bdf8';
+              ctx.globalAlpha = mouseAlpha;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          const alpha = particles[i].update();
+          particles[i].draw(alpha);
+        }
+
+        drawLines();
+        ctx.globalAlpha = 1.0;
+        animationFrameId = requestAnimationFrame(animate);
+      }
+
+      container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        mouse.active = true;
+      });
+
+      container.addEventListener('mouseleave', () => {
+        mouse.active = false;
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      window.addEventListener('resize', () => {
+        resize();
+      });
+
+      init();
+      animate();
+    })();
+  </script>
+<!-- Inline Flash Countdown micro-script -->
+<script>
+    (function initFlashCountdown() {
+      let totalSeconds = 4 * 3600 + 28 * 60 + 12;
+      const hEl = document.getElementById('deal-hours');
+      const mEl = document.getElementById('deal-mins');
+      const sEl = document.getElementById('deal-secs');
+      
+      if (!hEl || !mEl || !sEl) return;
+      
+      setInterval(function() {
+        if (totalSeconds > 0) {
+          totalSeconds--;
+          const hours = Math.floor(totalSeconds / 3600);
+          const mins = Math.floor((totalSeconds % 3600) / 60);
+          const secs = totalSeconds % 60;
+          
+          hEl.textContent = String(hours).padStart(2, '0');
+          mEl.textContent = String(mins).padStart(2, '0');
+          sEl.textContent = String(secs).padStart(2, '0');
+        }
+      }, 1000);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 mt-space-xl"><div class="bg-surface-container-low/60 py-space-xl border-b border-outline-variant/20"><div class="max-w-[1360px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(0,225,251,0.15)]"><span class="material-symbols-outlined text-[28px]">verified</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">100% Authorized Dealer</div><div class="font-body-sm text-body-sm text-on-surface-variant">Direct manufacturer supply &amp; serial validation</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary shadow-[0_0_12px_rgba(142,213,255,0.15)]"><span class="material-symbols-outlined text-[28px]">published_with_changes</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">30-Day Hassle-Free Returns</div><div class="font-body-sm text-body-sm text-on-surface-variant">Full refunds &amp; complimentary return labels</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(0,225,251,0.15)]"><span class="material-symbols-outlined text-[28px]">shield</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">2-Year Hardware Warranty</div><div class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive parts and labor coverage included</div></div></div></div></div></div><div class="max-w-[1360px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl"><div class="lg:col-span-4"><div class="font-headline-md text-headline-md font-bold text-white tracking-tight uppercase mb-space-xs flex items-center gap-1.5"><span>VOLTIX</span><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#00e1fb]"></span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-sm">Engineered for tech enthusiasts and prosumers. Delivering cutting-edge computing gear and consumer electronics with verified benchmark clarity.</p><div class="bg-surface-container p-space-md rounded-xl max-w-md border border-outline-variant/40"><div class="font-label-md text-label-md text-white mb-1 font-bold">Unlock 10% Off Your Next Rig</div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Subscribe for drops, technical alerts, and seasonal rebates.</p><div class="flex gap-space-xs"><input class="flex-1 bg-surface-container-lowest px-space-md py-2 rounded-lg font-body-sm text-body-sm text-white border border-outline-variant/50 focus:border-tertiary outline-none" placeholder="Enter your technical work email" type="email"/><button class="bg-primary-container text-on-primary px-space-md py-2 rounded-lg font-label-md text-label-md hover:bg-tertiary hover:text-on-tertiary transition-all font-bold shadow-[0_0_12px_rgba(56,189,248,0.25)]">Subscribe</button></div></div></div><div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Shop</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="laptops-and-computing" href="#">Laptops &amp; Ultrabooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="smartphones" href="#">Flagship Smartphones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="gaming-gear" href="#">PC Components &amp; GPUs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="audio-and-headphones" href="#">Audiophile DACs &amp; Monitors</a><a class="font-body-sm text-body-sm text-tertiary font-medium hover:underline" data-path="deals-and-clearance" href="#">Clearance Depot</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Support</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Order Tracking &amp; Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Warranty Claims &amp; RMA</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Driver &amp; BIOS Downloads</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Live System Diagnostic</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Trade-in Estimator</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Company</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">About VOLTIX</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Enterprise Procurement</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Hardware Reviews Blog</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Careers (Hardware Labs)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="store-locator" href="#">Store Network</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Legal</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Compliance &amp; Recalls</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Cookie Preferences</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Security Whitepaper</a></div></div></div></div><div class="bg-surface-container py-space-md border-t border-outline-variant/30"><div class="max-w-[1360px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm font-mono text-xs"><span>© 2024 VOLTIX Electronics Inc. All rights reserved. High-Precision Gear.</span></div><div class="flex items-center gap-space-md text-label-sm font-label-sm"><span class="px-2 py-1 bg-surface-container-lowest rounded border border-outline-variant/40 font-bold text-white">Apple Pay</span><span class="px-2 py-1 bg-surface-container-lowest rounded border border-outline-variant/40 font-bold text-white">Google Pay</span><span class="px-2 py-1 bg-surface-container-lowest rounded border border-outline-variant/40 font-bold text-white">VISA</span><span class="px-2 py-1 bg-surface-container-lowest rounded border border-outline-variant/40 font-bold text-white">Mastercard</span><span class="px-2 py-1 bg-surface-container-lowest rounded border border-outline-variant/40 font-bold text-white">Klarna</span></div></div></div></footer>
+<script src="../../js/voltix.js"></script></body></html>

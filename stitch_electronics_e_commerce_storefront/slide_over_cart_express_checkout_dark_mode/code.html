@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface": "#dfe2ef",
+          "on-primary": "#00354a",
+          "surface-variant": "#31353f",
+          "surface-container-low": "#181b25",
+          "on-tertiary": "#00363d",
+          "primary-fixed-dim": "#7bd0ff",
+          "primary-fixed": "#c4e7ff",
+          "error": "#ffb4ab",
+          "surface-tint": "#7bd0ff",
+          "surface-container-high": "#262a34",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-fixed": "#001f24",
+          "error-container": "#93000a",
+          "inverse-on-surface": "#2c303a",
+          "on-primary-container": "#004965",
+          "outline": "#87929a",
+          "on-background": "#dfe2ef",
+          "on-tertiary-container": "#004b55",
+          "surface-container-highest": "#31353f",
+          "secondary": "#c0c1ff",
+          "on-secondary-container": "#b0b2ff",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "secondary-container": "#3131c0",
+          "on-secondary": "#1000a9",
+          "on-primary-fixed": "#001e2c",
+          "on-error": "#690005",
+          "surface": "#0f131c",
+          "tertiary-fixed-dim": "#00daf3",
+          "primary-container": "#38bdf8",
+          "tertiary": "#00e1fb",
+          "on-primary-fixed-variant": "#004c69",
+          "primary": "#8ed5ff",
+          "on-tertiary-fixed-variant": "#004f58",
+          "tertiary-fixed": "#9cf0ff",
+          "surface-container-lowest": "#0a0e17",
+          "secondary-fixed-dim": "#c0c1ff",
+          "surface-bright": "#353943",
+          "background": "#0f131c",
+          "on-surface-variant": "#bdc8d1",
+          "on-secondary-fixed": "#07006c",
+          "surface-dim": "#0f131c",
+          "tertiary-container": "#00c3d9",
+          "inverse-primary": "#00668a",
+          "outline-variant": "#3e484f",
+          "surface-container": "#1c1f29",
+          "secondary-fixed": "#e1e0ff",
+          "inverse-surface": "#dfe2ef"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "space-xl": "2rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Geist"
+          ],
+          "headline-xl": [
+            "Sora"
+          ],
+          "headline-lg": [
+            "Sora"
+          ],
+          "display-lg-mobile": [
+            "Sora"
+          ],
+          "label-mono": [
+            "Geist"
+          ],
+          "body-sm": [
+            "Geist"
+          ],
+          "body-md": [
+            "Geist"
+          ],
+          "body-lg": [
+            "Geist"
+          ],
+          "headline-xl-mobile": [
+            "Sora"
+          ],
+          "headline-md": [
+            "Sora"
+          ],
+          "display-lg": [
+            "Sora"
+          ],
+          "label-md": [
+            "Geist"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><link rel="stylesheet" href="../../css/voltix.css"></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-[#0A0E17]/90 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_12px_rgba(0,0,0,0.6)]"><div class="h-36 w-full"><div class="h-9 bg-surface-container-lowest px-margin text-on-surface-variant flex items-center justify-between border-b border-outline-variant/20"><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary">local_shipping</span><span>Free express shipping on tech orders over $99</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">headset_mic</span><span>24/7 Expert Technical Support</span></div></div><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><a class="flex items-center gap-space-xs hover:text-primary transition-colors" data-path="store-locator" href="#"><span class="material-symbols-outlined text-[16px]">pin_drop</span><span>Store Locator</span></a><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">language</span><span>USD ($) / EN</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div></div></div><div class="h-[67px] max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="Voltix Electronics Logo" class="h-8 w-auto object-contain filter brightness-110" src="https://lh3.googleusercontent.com/aida/ALJJyrDbnhvm2GTQTzTfYD1dIkrE-36eZ2ljTtCDizRcjzFuBf9-GXVHVHLQGyos7bj7u1J9zZJJ0HX_vi8tzmUgSOXyJj0sklDFdQfT1zF25R5TDSUvXphj6c_qZGRx_4wofgpTIdMRXdb2pHDRKq64VRBRUiX-2tlrTNAmEZxeXkxCXtze3EWhWePJkkifowbgoIk7NP6CchVgiQZfmpysdAniRF62s1mwgP4gJOYtUuM"/><a class="font-headline-md text-headline-md font-bold tracking-tight text-white uppercase" data-path="home" href="#">VOLTIX</a></div><div class="flex-1 max-w-2xl hidden lg:flex items-center"><div class="w-full flex items-center bg-surface-container-low border border-outline-variant/30 rounded-lg p-1 shadow-inner"><div class="flex items-center px-space-sm py-1 gap-1 text-on-surface-variant font-label-md text-label-md cursor-pointer border-r border-outline-variant/30"><span>All Hardware</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="flex-1 flex items-center px-space-sm"><span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Search ultra-gear, RTX GPUs, OLEDs, chipsets..." type="text"/><kbd class="font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-mono border border-outline-variant/40">/</kbd></div><button class="bg-primary-container text-on-primary-container font-bold px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:bg-primary transition-all flex items-center gap-1 shadow-[0_0_12px_rgba(56,189,248,0.3)]"><span class="material-symbols-outlined text-[16px]">tune</span><span>Search</span></button></div></div><div class="flex items-center gap-space-md shrink-0"><a class="relative flex items-center gap-1.5 p-2 rounded-lg hover:bg-surface-container hover:text-white text-on-surface-variant transition-colors" data-path="spec-compare" href="#"><span class="material-symbols-outlined text-[22px]">compare_arrows</span><span class="hidden xl:inline font-label-md text-label-md">Compare</span><span class="absolute top-1 right-1 xl:static bg-surface-container-high text-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded-full border border-primary/20">2</span></a><a class="relative flex items-center gap-1.5 p-2 rounded-lg hover:bg-surface-container hover:text-white text-on-surface-variant transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="hidden xl:inline font-label-md text-label-md">Wishlist</span><span class="absolute top-1 right-1 xl:static bg-surface-container-high text-white font-label-sm text-label-sm px-1.5 py-0.2 rounded-full border border-outline-variant/30">4</span></a><button class="flex items-center gap-space-sm bg-surface-container-low hover:bg-surface-container border border-primary/30 px-space-md py-2 rounded-lg text-white transition-all shadow-[0_0_12px_rgba(56,189,248,0.15)]" onclick="toggleCartDrawer()"><div class="relative"><span class="material-symbols-outlined text-[22px] text-tertiary">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-primary text-on-primary font-label-sm text-label-sm w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></div><div class="text-left leading-tight hidden sm:block"><div class="font-label-sm text-label-sm text-on-surface-variant">Cart (2)</div><div class="font-label-md text-label-md font-bold text-white">$349.00</div></div></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBihZ8AwpGHtQaOczH4-MQPS41mW5oxUzXg-niItSaZU-D2E0b7KGIUGvhyz65wJy2uvSNdSQ9-W2qOY2y98ptjLOaJJCLWVcwJtQnkaM9EEypSRW596N5EeNF3Lju4m11HZzbRnUBVLGZ1CzJl_AbIsY4hpXTy9Nol__jJ7aCrs6mV3TL9C-drJkfeTAo3RyynKSsfpb9mtCh5i9KyQQGl3IxOJcrT1obEJab3BmQ"/><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer hover:text-white">expand_more</span></div></div></div><nav class="h-11 bg-surface-container-lowest/80 border-t border-outline-variant/20 max-w-[1360px] mx-auto px-margin flex items-center justify-between" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="flex items-center gap-space-lg"><button class="flex items-center gap-space-xs font-label-lg text-label-lg text-white hover:text-primary transition-colors py-1"><span class="material-symbols-outlined text-[20px]">menu</span><span>All Categories</span></button><div class="h-4 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="smartphones" href="#">Smartphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="laptops-and-computing" href="#">Laptops &amp; Computing</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="audio-and-headphones" href="#">Audio &amp; Headphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="smart-home" href="#">Smart Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="gaming-gear" href="#">Gaming Gear</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-white transition-colors py-1.5 px-2" data-path="wearables" href="#">Wearables</a></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1.5 font-label-md text-label-md text-tertiary hover:text-tertiary-fixed font-bold py-1 px-2.5 rounded-full bg-tertiary/10 border border-tertiary/30 shadow-[0_0_8px_rgba(0,225,251,0.2)]" data-path="deals-and-clearance" href="#"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span>Deals &amp; Clearance</a></div></nav></div></header><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full relative min-h-[calc(100vh-9rem)] overflow-hidden">
+<!-- Simulated Storefront Background Canvas with Dark Theme Richness -->
+<div class="w-full max-w-[1360px] mx-auto px-margin py-space-lg select-none opacity-20 blur-[3px] pointer-events-none transition-all duration-300">
+<!-- Breadcrumb & Page Context Mock -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-md">
+<span>Catalog</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Audio &amp; Acoustics</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-white font-semibold">SoundPulse Pro Studio ANC</span>
+</div>
+<!-- Background Mock Hero / Product Area -->
+<div class="grid grid-cols-12 gap-space-lg mb-space-xl">
+<div class="col-span-8 bg-[#0D1322] border border-outline-variant/30 rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="h-96 w-full bg-surface-container-low rounded-lg flex items-center justify-center relative overflow-hidden ring-1 ring-outline-variant/20">
+<img class="object-cover w-full h-full opacity-80" data-alt="High-end matte graphite wireless over-ear noise-cancelling headphones placed elegantly on a minimalist concrete plinth, dramatic architectural soft studio lighting, ultra-clean tech product design aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXIYSJPayupsLyOrrd1XT-92HKjp5WBgnzIUgcr4UdMU8QCBmhmO-eqz5NxPk-zkZe-FrSsAbOuCfhOLymUKtqL3wz66jCKpZF40CH2K6-PRWS7TTFGIQ50oDUZFs52yAwqdqianE6X-fdlhPpGzyiBt_umcC2WKewyewkWMK1WlaTE5lzwdvlk33NS0CHPgMFxZcjt3g8F0TFUYmV_FV5jZOpb1I-fQ-miv2DcuQ"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 border border-primary/30 px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-bold">
+            Flagship Series 2024
+          </div>
+</div>
+<div class="flex gap-space-md">
+<div class="h-20 w-20 rounded-lg bg-surface-container-low border border-outline-variant/20"></div>
+<div class="h-20 w-20 rounded-lg bg-surface-container-low border border-outline-variant/20"></div>
+<div class="h-20 w-20 rounded-lg bg-surface-container-low border border-outline-variant/20"></div>
+</div>
+</div>
+<div class="col-span-4 bg-[#0D1322] border border-outline-variant/30 rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="h-6 w-32 bg-surface-container-high rounded-full"></div>
+<div class="h-10 w-3/4 bg-surface-container-highest rounded-lg"></div>
+<div class="h-5 w-1/2 bg-surface-container-high rounded-full"></div>
+<div class="h-24 w-full bg-surface-container-low rounded-lg mt-space-md border border-outline-variant/20"></div>
+<div class="h-12 w-full bg-primary-container rounded-lg mt-auto"></div>
+</div>
+</div>
+</div>
+<!-- DRAWER OVERLAY WRAPPER -->
+<div class="fixed inset-0 z-50 bg-[#05080F]/80 backdrop-blur-md transition-opacity duration-300 flex justify-end" id="cartDrawerBackdrop">
+<!-- Dismissal backdrop tap area -->
+<div class="flex-1 cursor-pointer" onclick="toggleCartDrawer()"></div>
+<!-- Slide-over Main Panel (480px width) in Rich Obsidian (#0D1322) -->
+<div class="w-full max-w-[480px] h-full bg-[#0D1322] border-l border-primary/20 shadow-[0_0_50px_rgba(0,0,0,0.8),-8px_0_24px_rgba(56,189,248,0.06)] flex flex-col justify-between transform transition-transform duration-300 ease-out translate-x-0 relative z-10 overflow-hidden font-body-md" id="cartPanel">
+<!-- 1. DRAWER HEADER -->
+<div class="px-space-lg pt-space-lg pb-space-sm bg-[#0D1322]/95 backdrop-blur-md border-b border-outline-variant/30 shrink-0">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-white font-bold tracking-tight">Your Shopping Cart</h2>
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/40 text-primary font-label-md text-label-md font-bold shadow-[0_0_8px_rgba(142,213,255,0.2)]">2 items</span>
+</div>
+<button aria-label="Close cart drawer" class="w-9 h-9 rounded-full bg-[#131B2E] border border-outline-variant/40 hover:border-primary/50 text-on-surface-variant hover:text-white flex items-center justify-center transition-all hover:shadow-[0_0_10px_rgba(56,189,248,0.25)]" onclick="toggleCartDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- FREE SHIPPING PROGRESS BAR (Neon Cyan Theme) -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-[#131B2E] border border-tertiary/25 shadow-inner flex flex-col gap-1.5 relative overflow-hidden">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1.5 text-white font-medium">
+<span class="material-symbols-outlined text-tertiary text-[18px]">bolt</span>
+<span>You are <strong class="text-tertiary font-bold drop-shadow-[0_0_6px_rgba(0,225,251,0.5)]">$15.00</strong> away from <strong class="text-white font-bold">FREE Express</strong></span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary tabular-nums drop-shadow-[0_0_6px_rgba(0,225,251,0.4)]">85%</span>
+</div>
+<!-- Progress Track with Cyan Glow -->
+<div class="w-full h-2 rounded-full bg-[#0A0E17] overflow-hidden ring-1 ring-outline-variant/30">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container via-tertiary to-tertiary-fixed shadow-[0_0_10px_#00e1fb] transition-all duration-500 ease-out" style="width: 85%;"></div>
+</div>
+</div>
+</div>
+<!-- 2. SCROLLABLE CART CONTENT AREA -->
+<div class="flex-1 overflow-y-auto px-space-lg py-space-sm divide-y-0 space-y-space-md">
+<!-- Cart Items List -->
+<div class="space-y-space-md">
+<!-- ITEM 1: SoundPulse Pro ANC Headphones (Dark Surface Card #131B2E + Neon Border) -->
+<div class="p-space-md rounded-xl bg-[#131B2E] border border-outline-variant/40 hover:border-primary/50 shadow-lg flex flex-col gap-space-sm transition-all duration-200 hover:shadow-[0_4px_20px_rgba(56,189,248,0.1)] group">
+<div class="flex gap-space-md">
+<div class="w-20 h-20 rounded-lg bg-[#0A0E17] border border-outline-variant/30 shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up studio product photography of high-grade matte space gray wireless headphones with plush earcups and titanium slider details on crisp clean light surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSuLZ1-K5dyK9SLljUdq7ryv9NE9WljqifUWQdWA2DK8C2SZA94sHCI2uPMSkMiprfRdBzxJoMhByuq65_Yn69XC1S-rS3OPA7NPblXNpRN-2gofPTR_lljo1emW6_gJWbDdj84Vbxn-T0iaqdJ_M59bcIqjQZQHH8bEPu5tGz_5xmk4NuS3HIKAgPOv7O8KnzdmHTiWhZApTH68KoFvVGftxXGfe0WUOvWHnpeDA"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-white leading-tight truncate">Voltix SoundPulse Pro</h3>
+<button class="text-outline hover:text-error transition-colors p-0.5 rounded hover:bg-error/10" title="Remove item">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Matte Space Gray • Hi-Res LDAC</p>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<!-- Stepper -->
+<div class="inline-flex items-center bg-[#0A0E17] border border-outline-variant/40 rounded-lg p-0.5 shadow-inner">
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-white">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-white tracking-tight tabular-nums drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">$349.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-label-sm font-label-sm border-t border-outline-variant/20">
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[15px]">bookmark</span>
+<span>Save for Later</span>
+</button>
+<div class="inline-flex items-center gap-1 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>In Stock &amp; Ready to Dispatch</span>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Voltix GaN Ultra 140W Fast Charger -->
+<div class="p-space-md rounded-xl bg-[#131B2E] border border-outline-variant/40 hover:border-primary/50 shadow-lg flex flex-col gap-space-sm transition-all duration-200 hover:shadow-[0_4px_20px_rgba(56,189,248,0.1)] group">
+<div class="flex gap-space-md">
+<div class="w-20 h-20 rounded-lg bg-[#0A0E17] border border-outline-variant/30 shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Compact sleek midnight black multi-port 140W GaN fast wall charger with fold-down prongs and clean technical typography on high-tech matte surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuFvI6OPIzJOm6IDEoxsJsYboeNCSEXpExh7KLEfOcK67AdEr8QmmweuzRXmBBJMczK6XJjykwYdeO_FimbVSIFhIjcwwS2F3kqLLwwQ48ueWBwypMRLOGDxxqtk362QSbtibQBP4sTT7BrvKQEvl3f9m9YD7Gpa9cRlVYmG4-be8FI864CFpPF5jd0GiOSDLhzqfyW_wAKDkwLlTXrp5VmhOkGFLJThFULK1A7hc"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-white leading-tight truncate">Voltix GaN Ultra 140W</h3>
+<button class="text-outline hover:text-error transition-colors p-0.5 rounded hover:bg-error/10" title="Remove item">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Midnight Black • Triple USB-C PD3.1</p>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<!-- Stepper -->
+<div class="inline-flex items-center bg-[#0A0E17] border border-outline-variant/40 rounded-lg p-0.5 shadow-inner">
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-white">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-white tracking-tight tabular-nums drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">$69.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-label-sm font-label-sm border-t border-outline-variant/20">
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[15px]">bookmark</span>
+<span>Save for Later</span>
+</button>
+<div class="inline-flex items-center gap-1 text-tertiary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>In Stock &amp; Ready to Dispatch</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FREQUENTLY ADDED CROSS-SELL -->
+<div class="p-space-md rounded-xl bg-[#131B2E] border border-outline-variant/40 shadow-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-bold text-white tracking-wide uppercase">Frequently Added Together</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 px-2 py-0.5 rounded border border-tertiary/30">Bundle Deal</span>
+</div>
+<div class="flex items-center justify-between gap-space-sm bg-[#0A0E17] border border-outline-variant/30 p-space-sm rounded-lg shadow-inner">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low border border-outline-variant/20 shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Durable reinforced braided black nylon USB-C charging cable with anodized aluminum space-gray connectors coiled neatly on a light reflective tech backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1mMH68N8SdBPRm8Muv5m1uu-FUAOglSzenJ4ncks09jzw2Kr1gHJvlBjFMjhIK_btHnTN6Pu49wyjMhGpuTcceJZBLBVGClRS6r1CkC2k6QHRxJZHAcQhgDW-wZoQVl1VP3hdreEdDL1zZBCiAC2fdNdklu7X2ZMXLXI7E9tHDZ2JPES6xBFTAqomF5iEnvk1OFJ-oRb6Fco5SD9smWFO_X3NqzKrCFP7NNVU-WE"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-md text-label-md font-bold text-white truncate">Braided USB-C 240W Cable (2m)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">E-Marker Chip • 480Mbps Sync</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-lg text-label-lg font-bold text-white tabular-nums">$19.00</span>
+<button class="w-8 h-8 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-bold flex items-center justify-center transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)] hover:scale-105" title="Quick Add">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- PROMO CODE ACCORDION & ACTIVE BADGE -->
+<div class="p-space-md rounded-xl bg-[#131B2E] border border-outline-variant/40 shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-white font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-tertiary text-[18px]">local_offer</span>
+<span>Promo or Gift Card</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary/10 border border-tertiary/30 px-2 py-0.5 rounded">1 Applied</span>
+</div>
+<!-- Applied Promo Tag Pill -->
+<div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-tertiary/10 border border-tertiary/30 text-tertiary-fixed">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="text-white">TECHSAVE10 <span class="text-tertiary font-mono">(-$41.80)</span></span>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors" title="Remove promo">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+</button>
+</div>
+<!-- Promo Input Form -->
+<div class="flex gap-space-xs mt-1">
+<div class="flex-1 relative">
+<input class="w-full bg-[#0A0E17] border border-outline-variant/40 focus:border-tertiary text-white placeholder:text-outline font-body-sm text-body-sm px-space-md py-2 rounded-lg outline-none uppercase font-mono shadow-inner transition-colors" placeholder="Enter coupon code" type="text"/>
+</div>
+<button class="bg-[#181B25] hover:bg-surface-container-high border border-outline-variant/40 text-white px-space-md py-2 rounded-lg font-label-md text-label-md transition-all hover:border-primary/40">
+              Apply
+            </button>
+</div>
+</div>
+</div>
+<!-- 3. ORDER SUMMARY BREAKDOWN & CHECKOUT ACTIONS -->
+<div class="px-space-lg py-space-md bg-[#0A0E17] border-t border-outline-variant/30 shadow-[0_-8px_25px_rgba(0,0,0,0.5)] shrink-0 flex flex-col gap-space-sm">
+<!-- Summary Rows -->
+<div class="space-y-1.5 font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Items Subtotal</span>
+<span class="font-semibold text-white tabular-nums">$418.00</span>
+</div>
+<div class="flex justify-between text-tertiary">
+<span class="flex items-center gap-1">
+<span>Applied Promo Discount</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-tertiary/15 border border-tertiary/30 font-bold text-tertiary">10% OFF</span>
+</span>
+<span class="font-semibold tabular-nums">-$41.80</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Estimated Shipping</span>
+<span class="font-bold text-tertiary drop-shadow-[0_0_4px_rgba(0,225,251,0.4)]">FREE (Qualified)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Estimated Sales Tax</span>
+<span class="font-semibold text-white tabular-nums">$28.21</span>
+</div>
+<div class="pt-2 flex justify-between items-baseline border-t border-outline-variant/20">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-white">Total</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1 font-normal">USD</span>
+</div>
+<span class="font-price-display text-price-display font-bold text-white tracking-tight tabular-nums drop-shadow-[0_0_12px_rgba(255,255,255,0.2)]">$404.41</span>
+</div>
+</div>
+<!-- PRIMARY CHECKOUT BUTTON -->
+<button class="w-full bg-gradient-to-r from-primary-container via-sky-400 to-tertiary hover:brightness-110 text-[#002838] font-bold py-3.5 px-space-lg rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-sm transition-all transform active:scale-[0.99] shadow-[0_0_24px_rgba(56,189,248,0.4)] hover:shadow-[0_0_30px_rgba(0,225,251,0.6)]">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span class="tracking-wide">Proceed to Secure Checkout</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- EXPRESS 1-CLICK PAYMENTS (Glowing Modern Dark Accents) -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="relative flex py-0.5 items-center justify-center">
+<div class="w-full h-px bg-outline-variant/30 absolute"></div>
+<span class="relative bg-[#0A0E17] px-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Or Instant Express Pay</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Apple Pay -->
+<button class="h-10 bg-white hover:bg-slate-100 text-black rounded-lg flex items-center justify-center transition-all shadow-[0_0_14px_rgba(255,255,255,0.2)] hover:shadow-[0_0_18px_rgba(255,255,255,0.35)]">
+<span class="font-bold font-headline-sm text-body-md flex items-center tracking-tight gap-1">
+<svg class="h-4 w-4 fill-current inline-block" viewbox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.69-7.85-12-14.43-6.62-10.11-11.75-21.72-15.38-34.82-3.63-13.1-5.45-25.29-5.45-36.57 0-14.56 3.69-26.69 11.08-36.38 7.38-9.69 16.59-14.61 27.62-14.77 5.25 0 10.82 1.34 16.71 4.02 5.89 2.68 9.77 4.08 11.64 4.2 1.57-.12 5.6-1.57 12.09-4.35 6.49-2.78 11.94-4.05 16.36-3.8 12.28.63 21.99 5.24 29.13 13.84-10.74 6.5-16.01 15.52-15.82 27.05.2 9.04 3.73 16.66 10.59 22.86 6.86 6.2 15.02 9.74 24.49 10.63-2.12 6.53-4.73 13.43-7.84 20.7zM119.22 31.84c0-7.72 2.76-14.98 8.27-21.78 5.51-6.8 12.37-10.97 20.57-12.51.13 1.05.2 2.05.2 3 0 7.64-2.89 15.11-8.66 22.41-5.77 7.3-12.83 11.53-21.18 12.69-.38-1.25-.57-2.52-.57-3.81z"></path></svg>
+                Pay
+              </span>
+</button>
+<!-- Google Pay -->
+<button class="h-10 bg-[#131B2E] border border-outline-variant/50 hover:border-primary text-white rounded-lg flex items-center justify-center transition-all shadow-[0_0_12px_rgba(56,189,248,0.15)] hover:shadow-[0_0_16px_rgba(56,189,248,0.3)]">
+<span class="font-bold font-headline-sm text-body-md flex items-center tracking-tight">
+<span class="text-primary font-bold">G</span><span class="ml-0.5">Pay</span>
+</span>
+</button>
+<!-- PayPal -->
+<button class="h-10 bg-[#FFC439] hover:bg-[#F2BA36] text-[#003087] rounded-lg flex items-center justify-center font-bold text-label-md font-label-md transition-all shadow-[0_0_14px_rgba(255,196,57,0.3)] hover:shadow-[0_0_20px_rgba(255,196,57,0.5)]">
+<span class="italic font-bold tracking-tight">Pay<span class="text-[#0079C1]">Pal</span></span>
+</button>
+</div>
+</div>
+<!-- REASSURANCE BADGES -->
+<div class="grid grid-cols-3 gap-1 pt-space-xs text-center border-t border-outline-variant/20">
+<div class="flex flex-col items-center justify-center py-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary mb-0.5">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">256-bit SSL</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1">
+<span class="material-symbols-outlined text-[16px] text-primary mb-0.5">replay</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">30-Day Returns</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary mb-0.5">shield</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Official Warranty</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function toggleCartDrawer() {
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      const panel = document.getElementById('cartPanel');
+      if (!backdrop || !panel) return;
+      
+      const isOpen = !backdrop.classList.contains('pointer-events-none');
+      if (isOpen) {
+        panel.classList.add('translate-x-full');
+        backdrop.classList.add('opacity-0');
+        setTimeout(() => {
+          backdrop.classList.add('pointer-events-none');
+        }, 300);
+      } else {
+        backdrop.classList.remove('pointer-events-none');
+        backdrop.classList.remove('opacity-0');
+        panel.classList.remove('translate-x-full');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-[#0A0E17] border-t border-outline-variant/30 mt-space-xl"><div class="bg-[#0D1322] border-b border-outline-variant/20 py-space-xl"><div class="max-w-[1360px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary shadow-[0_0_12px_rgba(56,189,248,0.2)]"><span class="material-symbols-outlined text-[28px]">verified</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">100% Authorized Dealer</div><div class="font-body-sm text-body-sm text-on-surface-variant">Direct manufacturer supply &amp; serial validation</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-tertiary/30 flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(0,225,251,0.2)]"><span class="material-symbols-outlined text-[28px]">published_with_changes</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">30-Day Hassle-Free Returns</div><div class="font-body-sm text-body-sm text-on-surface-variant">Full refunds &amp; complimentary return labels</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary shadow-[0_0_12px_rgba(56,189,248,0.2)]"><span class="material-symbols-outlined text-[28px]">shield</span></div><div><div class="font-label-lg text-label-lg text-white font-bold">2-Year Hardware Warranty</div><div class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive parts and labor coverage included</div></div></div></div></div></div><div class="max-w-[1360px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl"><div class="lg:col-span-4"><div class="font-headline-md text-headline-md font-bold text-white tracking-tight uppercase mb-space-xs">VOLTIX</div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-sm">Engineered for tech enthusiasts and prosumers. Delivering cutting-edge computing gear and consumer electronics with verified benchmark clarity.</p><div class="bg-[#131B2E] border border-outline-variant/40 p-space-md rounded-xl max-w-md shadow-lg"><div class="font-label-md text-label-md text-white mb-1 font-bold">Unlock 10% Off Your Next Rig</div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Subscribe for drops, technical alerts, and seasonal rebates.</p><div class="flex gap-space-xs"><input class="flex-1 bg-[#0A0E17] px-space-md py-2 rounded-lg font-body-sm text-body-sm border border-outline-variant/40 focus:border-tertiary text-white outline-none" placeholder="Enter your technical work email" type="email"/><button class="bg-primary-container text-on-primary-container font-bold px-space-md py-2 rounded-lg font-label-md text-label-md hover:bg-primary transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)]">Subscribe</button></div></div></div><div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Shop</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="laptops-and-computing" href="#">Laptops &amp; Ultrabooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="smartphones" href="#">Flagship Smartphones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="gaming-gear" href="#">PC Components &amp; GPUs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="audio-and-headphones" href="#">Audiophile DACs &amp; Monitors</a><a class="font-body-sm text-body-sm text-tertiary font-medium hover:underline" data-path="deals-and-clearance" href="#">Clearance Depot</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Support</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Order Tracking &amp; Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Warranty Claims &amp; RMA</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Driver &amp; BIOS Downloads</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Live System Diagnostic</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Trade-in Estimator</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Company</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">About VOLTIX</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Enterprise Procurement</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Hardware Reviews Blog</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Careers (Hardware Labs)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="store-locator" href="#">Store Network</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-white font-bold">Legal</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Compliance &amp; Recalls</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Preferences</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Security Whitepaper</a></div></div></div></div><div class="bg-[#070B13] py-space-md border-t border-outline-variant/20"><div class="max-w-[1360px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>© 2024 VOLTIX Electronics Inc. All rights reserved. High-Precision Gear.</span></div><div class="flex items-center gap-space-md text-label-sm font-label-sm"><span class="px-2 py-1 bg-[#131B2E] rounded border border-outline-variant/40 font-bold text-white">Apple Pay</span><span class="px-2 py-1 bg-[#131B2E] rounded border border-outline-variant/40 font-bold text-white">Google Pay</span><span class="px-2 py-1 bg-[#131B2E] rounded border border-outline-variant/40 font-bold text-white">VISA</span><span class="px-2 py-1 bg-[#131B2E] rounded border border-outline-variant/40 font-bold text-white">Mastercard</span><span class="px-2 py-1 bg-[#131B2E] rounded border border-outline-variant/40 font-bold text-white">Klarna</span></div></div></div></footer><script src="../../js/voltix.js"></script></body></html>

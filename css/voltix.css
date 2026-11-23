@@ -1,0 +1,112 @@
+/* Voltix Shared CSS Enhancements */
+
+/* Smooth scrolling and transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Toast Notification Styles */
+.voltix-toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.voltix-toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  max-width: 420px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #131b2e;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.voltix-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.voltix-toast-success {
+  border-left: 4px solid #10b981;
+}
+
+.voltix-toast-info {
+  border-left: 4px solid #2563eb;
+}
+
+/* Badge Pulse Animation on Cart Update */
+@keyframes cartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+.badge-bump {
+  animation: cartPulse 0.35s ease-in-out;
+}
+
+/* Cart Drawer transitions */
+#cartDrawerBackdrop {
+  transition: opacity 0.3s ease-out;
+}
+
+#cartPanel {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide native scrollbar while retaining scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Navigation active indicator */
+.nav-link-active {
+  color: #004ac6 !important;
+  font-weight: 700 !important;
+  position: relative;
+}
+
+.dark .nav-link-active {
+  color: #38bdf8 !important;
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 9999px;
+}
+
+/* Quick Add button hover micro-animation */
+.btn-hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 74, 198, 0.15);
+}

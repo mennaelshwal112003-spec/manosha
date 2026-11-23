@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Sora:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#090d16;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface": "#dfe2ef",
+          "on-primary": "#00354a",
+          "surface-variant": "#31353f",
+          "surface-container-low": "#181b25",
+          "on-tertiary": "#00363d",
+          "primary-fixed-dim": "#7bd0ff",
+          "primary-fixed": "#c4e7ff",
+          "error": "#ffb4ab",
+          "surface-tint": "#7bd0ff",
+          "surface-container-high": "#262a34",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-fixed": "#001f24",
+          "error-container": "#93000a",
+          "inverse-on-surface": "#2c303a",
+          "on-primary-container": "#004965",
+          "outline": "#87929a",
+          "on-background": "#dfe2ef",
+          "on-tertiary-container": "#004b55",
+          "surface-container-highest": "#31353f",
+          "secondary": "#c0c1ff",
+          "on-secondary-container": "#b0b2ff",
+          "on-secondary-fixed-variant": "#2f2ebe",
+          "secondary-container": "#3131c0",
+          "on-secondary": "#1000a9",
+          "on-primary-fixed": "#001e2c",
+          "on-error": "#690005",
+          "surface": "#0f131c",
+          "tertiary-fixed-dim": "#00daf3",
+          "primary-container": "#38bdf8",
+          "tertiary": "#00e1fb",
+          "on-tertiary-fixed-variant": "#004f58",
+          "tertiary-fixed": "#9cf0ff",
+          "surface-container-lowest": "#0a0e17",
+          "secondary-fixed-dim": "#c0c1ff",
+          "surface-bright": "#353943",
+          "background": "#090d16",
+          "on-surface-variant": "#bdc8d1",
+          "on-secondary-fixed": "#07006c",
+          "surface-dim": "#0f131c",
+          "tertiary-container": "#00c3d9",
+          "inverse-primary": "#00668a",
+          "outline-variant": "#3e484f",
+          "surface-container": "#1c1f29",
+          "secondary-fixed": "#e1e0ff",
+          "inverse-surface": "#dfe2ef"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "space-xl": "2rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Geist", "sans-serif"],
+          "headline-xl": ["Sora", "sans-serif"],
+          "headline-lg": ["Sora", "sans-serif"],
+          "display-lg-mobile": ["Sora", "sans-serif"],
+          "label-mono": ["Geist", "monospace"],
+          "body-sm": ["Geist", "sans-serif"],
+          "body-md": ["Geist", "sans-serif"],
+          "body-lg": ["Geist", "sans-serif"],
+          "headline-xl-mobile": ["Sora", "sans-serif"],
+          "headline-md": ["Sora", "sans-serif"],
+          "display-lg": ["Sora", "sans-serif"],
+          "label-md": ["Geist", "sans-serif"]
+        },
+        "fontSize": {
+          "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+          "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+          "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+          "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "label-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+          "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+          "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+          "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }]
+        }
+      }
+    }
+  }
+</script><link rel="stylesheet" href="../../css/voltix.css"></head><body class="bg-[#090d16] font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-[#0d1322]/90 backdrop-blur-md border-b border-surface-container-high/60 shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-36 w-full"><div class="h-9 bg-[#0a0e17] px-margin text-on-surface-variant flex items-center justify-between border-b border-surface-container/60"><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary">local_shipping</span><span>Free express shipping on tech orders over $99</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">headset_mic</span><span>24/7 Expert Technical Support</span></div></div><div class="flex items-center gap-space-lg text-body-sm font-body-sm"><a class="flex items-center gap-space-xs hover:text-primary-container transition-colors" data-path="store-locator" href="#"><span class="material-symbols-outlined text-[16px]">pin_drop</span><span>Store Locator</span></a><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary-container transition-colors"><span class="material-symbols-outlined text-[16px]">language</span><span>USD ($) / EN</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div></div></div><div class="h-[67px] max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="Voltix Electronics Logo" class="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" src="https://lh3.googleusercontent.com/aida/ALJJyrDbnhvm2GTQTzTfYD1dIkrE-36eZ2ljTtCDizRcjzFuBf9-GXVHVHLQGyos7bj7u1J9zZJJ0HX_vi8tzmUgSOXyJj0sklDFdQfT1zF25R5TDSUvXphj6c_qZGRx_4wofgpTIdMRXdb2pHDRKq64VRBRUiX-2tlrTNAmEZxeXkxCXtze3EWhWePJkkifowbgoIk7NP6CchVgiQZfmpysdAniRF62s1mwgP4gJOYtUuM"/><a class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-surface uppercase flex items-center gap-1.5" data-path="home" href="#">VOLTIX <span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#00e1fb]"></span></a></div><div class="flex-1 max-w-2xl hidden lg:flex items-center"><div class="w-full flex items-center bg-[#131b2e] border border-outline-variant/50 rounded-lg p-1 focus-within:border-primary-container focus-within:shadow-[0_0_12px_rgba(56,189,248,0.25)] transition-all"><div class="flex items-center px-space-sm py-1 gap-1 text-on-surface-variant font-label-md text-label-md cursor-pointer border-r border-outline-variant/40 hover:text-on-surface transition-colors"><span>All Hardware</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><div class="flex-1 flex items-center px-space-sm"><span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Search ultra-gear, RTX GPUs, OLEDs, chipsets..." type="text"/><kbd class="font-label-mono text-label-mono bg-surface-container-highest/60 px-1.5 py-0.5 rounded text-on-surface-variant border border-outline-variant/30">/</kbd></div><button class="bg-primary-container text-on-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:bg-tertiary hover:text-on-tertiary transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)] flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">tune</span><span>Search</span></button></div></div><div class="flex items-center gap-space-md shrink-0"><a class="relative flex items-center gap-1.5 p-2 rounded-lg bg-surface-container/40 hover:bg-surface-container hover:text-on-surface text-on-surface-variant border border-outline-variant/30 transition-colors" data-path="spec-compare" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary">compare_arrows</span><span class="hidden xl:inline font-label-md text-label-md">Compare</span><span class="absolute -top-1.5 -right-1.5 xl:static bg-surface-container-highest text-primary-fixed-dim border border-outline-variant/40 font-label-mono text-[10px] px-1.5 py-0.2 rounded-full">2</span></a><a class="relative flex items-center gap-1.5 p-2 rounded-lg bg-surface-container/40 hover:bg-surface-container hover:text-on-surface text-on-surface-variant border border-outline-variant/30 transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">favorite</span><span class="hidden xl:inline font-label-md text-label-md">Wishlist</span><span class="absolute -top-1.5 -right-1.5 xl:static bg-surface-container-highest text-on-surface font-label-mono text-[10px] px-1.5 py-0.2 rounded-full">4</span></a><button class="flex items-center gap-space-sm bg-[#131b2e] hover:bg-[#1a233a] border border-outline-variant/40 hover:border-primary-container/60 px-space-md py-2 rounded-lg text-on-surface transition-all shadow-[0_0_10px_rgba(0,0,0,0.3)]"><div class="relative"><span class="material-symbols-outlined text-[22px] text-primary-container">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-primary-container text-on-primary font-label-mono text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-[0_0_6px_rgba(56,189,248,0.8)]">2</span></div><div class="text-left leading-tight hidden sm:block"><div class="font-label-mono text-[10px] text-on-surface-variant">Cart (2)</div><div class="font-label-md text-label-md font-bold text-tertiary">$349.00</div></div></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBihZ8AwpGHtQaOczH4-MQPS41mW5oxUzXg-niItSaZU-D2E0b7KGIUGvhyz65wJy2uvSNdSQ9-W2qOY2y98ptjLOaJJCLWVcwJtQnkaM9EEypSRW596N5EeNF3Lju4m11HZzbRnUBVLGZ1CzJl_AbIsY4hpXTy9Nol__jJ7aCrs6mV3TL9C-drJkfeTAo3RyynKSsfpb9mtCh5i9KyQQGl3IxOJcrT1obEJab3BmQ"/><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer hover:text-on-surface">expand_more</span></div></div></div><nav class="h-11 bg-[#0d1322] border-t border-surface-container-high/60 max-w-[1360px] mx-auto px-margin flex items-center justify-between" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="flex items-center gap-space-lg"><button class="flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface hover:text-primary-container transition-colors py-1"><span class="material-symbols-outlined text-[20px] text-tertiary">menu</span><span>All Categories</span></button><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors py-1.5 px-2" data-path="smartphones" href="#">Smartphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors py-1.5 px-2" data-path="laptops-and-computing" href="#">Laptops &amp; Computing</a><a class="font-label-md text-label-md text-primary-container font-semibold border-b-2 border-primary-container py-1.5 px-2" data-path="audio-and-headphones" href="#">Audio &amp; Headphones</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors py-1.5 px-2" data-path="smart-home" href="#">Smart Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors py-1.5 px-2" data-path="gaming-gear" href="#">Gaming Gear</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-tertiary transition-colors py-1.5 px-2" data-path="wearables" href="#">Wearables</a></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1.5 font-label-md text-label-md text-tertiary font-bold py-1 px-3 rounded-full bg-tertiary-container/20 border border-tertiary/40 shadow-[0_0_8px_rgba(0,225,251,0.2)]" data-path="deals-and-clearance" href="#"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span>Deals &amp; Clearance</a></div></nav></div></header><main class="w-full pt-36 bg-[#090d16] text-on-surface"><div class="flex flex-col w-full">
+<!-- Breadcrumb Navigation Bar -->
+<div class="w-full bg-[#0d1322] border-b border-surface-container/60">
+<div class="max-w-[1360px] mx-auto px-margin py-3 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<nav class="flex items-center gap-space-xs flex-wrap">
+<a class="hover:text-primary-container transition-colors" data-path="home" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary-container transition-colors" data-path="audio-and-headphones" href="#">Audio &amp; Headphones</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary-container cursor-pointer transition-colors">Over-Ear</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-tertiary font-semibold truncate max-w-[200px] md:max-w-none">Voltix SoundPulse Pro</span>
+</nav>
+<div class="hidden sm:flex items-center gap-space-md text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-tertiary font-bold bg-[#131b2e] px-2.5 py-0.5 rounded-full border border-tertiary/30">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse shadow-[0_0_6px_#00e1fb]"></span> Verified Flagship 2024
+        </span>
+<span class="text-outline font-label-mono">SKU: VTX-SP-900X-GR</span>
+</div>
+</div>
+</div>
+<!-- Main Product Detail Grid Section -->
+<div class="max-w-[1360px] mx-auto px-margin py-space-lg w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Multi-Angle Media Gallery -->
+<div class="lg:col-span-7 flex flex-col-reverse md:flex-row gap-space-md items-start">
+<!-- Thumbnail Carousel Strip -->
+<div class="flex md:flex-col gap-space-sm overflow-x-auto md:overflow-visible w-full md:w-20 shrink-0 pb-2 md:pb-0" id="thumb-strip">
+<button class="thumb-btn relative w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#131b2e] border-2 border-primary-container shadow-[0_0_12px_rgba(56,189,248,0.3)] p-1.5 flex items-center justify-center shrink-0 transition-all scale-100" onclick="switchImage(0, this)">
+<img class="w-full h-full object-contain rounded-lg" data-alt="Studio hero front view of graphite matte Voltix SoundPulse Pro wireless ANC headphones centered on pure minimalist bright studio backdrop with subtle blue rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYGCy3xQi0oqY9z_DuAnqQyggs-3Ga6mb1zFiAepF_z2qyAZbwUI5cjmjSRRl_FGnF2SRxkxGreJ5xcX1JPMGvxyj3XgcpQFuyxCfMMqGMV0pizaB-hVPuVYflZ1uXqVNoJ_fB4KZDzYNniIM46l5mGFOJKPyS3ZCcgMZcHR-u13GJ--Em4yX5OUX9lKOxeRM7XdmrunS6Zoihzj1MjZVNtL75Agk7zeh3Z789HHA"/>
+</button>
+<button class="thumb-btn relative w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#131b2e] border border-outline-variant/40 p-1.5 flex items-center justify-center shrink-0 transition-all opacity-70 hover:opacity-100 hover:border-primary-container/60" onclick="switchImage(1, this)">
+<img class="w-full h-full object-contain rounded-lg" data-alt="Close up angled macro shot of luxury earcups and brushed titanium aluminum slider mechanism on Voltix SoundPulse Pro headphones with perforated memory foam cushion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ECcX55JYyGCZUmUBitbIwvBM8Qmy8mVli27IReeCftcQaZALoOme-rV0E5srVOVfyr6-8kGIvSl132pOoc2sj9FhQkISjQ_r11nDX9EwciChgKpowABbUunHM6ZkcHu5hSmBhGAlMN0_Kcw1xRzPx3bCc7LVVRtFqduU_TBGNeDiImSaAtF8kqw6OPSOoakebPcZQa2qtJ_Qy5jfYTSLGIFjuBCoKDvIfSTpmUo"/>
+</button>
+<button class="thumb-btn relative w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#131b2e] border border-outline-variant/40 p-1.5 flex items-center justify-center shrink-0 transition-all opacity-70 hover:opacity-100 hover:border-primary-container/60" onclick="switchImage(2, this)">
+<img class="w-full h-full object-contain rounded-lg" data-alt="Voltix SoundPulse Pro headphones neatly folded inside premium magnetic ballistic nylon travel case beside braided audio and USB-C cables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9aa3L4zhmCNQbSQryxE4ZukGBI6gx5UmVLwfhYB2osNHKjgJapy2COhZhycPHu0uba-UvBBxKsymAxgkC-Ulrtxkrxemr7_T6vZwE_UWJrF2wiiC1VTrE-p-kUmgTh0EPmbxwqZrJZFr6uTak4zIUx4cOY1wy1PE_S6OyAkKPW2IY8X5W0cfRaVoQmIcHHnKo3aVm_cy8hLQ0sjKrurVX6VKJttF6WuFKBrmNdK8"/>
+</button>
+<button class="thumb-btn relative w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#131b2e] border border-outline-variant/40 p-1.5 flex items-center justify-center shrink-0 transition-all opacity-70 hover:opacity-100 hover:border-primary-container/60" onclick="switchImage(3, this)">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Modern creative desktop workspace setting featuring Voltix SoundPulse Pro headphones resting beside high-end laptop, audiophile DAC amp, and warm desk lamp." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzxNG5rhbHaA4dIzR6aUc_QYE4YYPpHEBzJpjDUKy4i7VAw8V4wZMZVfGz9_DrwmOy9oEvA7hSJISGToTW3w76-sP380GamqvmXBDwwKgQgU62yNvOw3Qp6iM8hARdEEL7fhMUBqU3XJN8SZqtLFces8vMr_GysREjED4_1IlYBPw0_Mb_IEZFm8OQDkG0RBmUq32MAmznr3Fvy2zNq9NVZjVFchrDSLwaZLP12kw"/>
+</button>
+<!-- 360 Interactive Trigger Button -->
+<button class="thumb-btn relative w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#131b2e] border border-tertiary/40 shadow-[0_0_10px_rgba(0,225,251,0.2)] p-1 flex flex-col items-center justify-center shrink-0 text-tertiary hover:bg-[#1a233a] hover:border-tertiary transition-all" onclick="toggle360Modal()">
+<span class="material-symbols-outlined text-[26px]">360</span>
+<span class="font-label-mono text-[10px] font-bold uppercase mt-0.5 tracking-wider">3D Spin</span>
+</button>
+</div>
+<!-- Main Big Stage Image Container -->
+<div class="flex-1 w-full bg-[#131b2e] rounded-2xl border border-outline-variant/40 shadow-[0_8px_32px_rgba(0,0,0,0.6)] p-space-lg relative overflow-hidden group">
+<!-- Glow backdrop aura -->
+<div class="absolute -top-24 -left-24 w-72 h-72 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Badges & Triggers -->
+<div class="absolute top-4 left-4 z-10 flex flex-wrap gap-2">
+<span class="bg-primary-container text-on-primary font-label-mono text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-[0_0_10px_rgba(56,189,248,0.5)] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Flagship
+            </span>
+<span class="bg-[#1a233a] text-tertiary border border-tertiary/30 font-label-mono text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">local_fire_department</span> High Demand
+            </span>
+</div>
+<div class="absolute top-4 right-4 z-10 flex gap-2">
+<button class="bg-[#1a233a]/90 backdrop-blur-md hover:bg-surface-container-high border border-outline-variant/40 text-on-surface px-3 py-1.5 rounded-full font-label-mono text-[11px] shadow-sm flex items-center gap-1.5 transition-all hover:border-tertiary/60" onclick="toggle360Modal()">
+<span class="material-symbols-outlined text-[16px] text-tertiary">view_in_ar</span>
+<span class="font-bold">AR &amp; 360°</span>
+</button>
+<button class="bg-[#1a233a]/90 backdrop-blur-md hover:bg-surface-container-high border border-outline-variant/40 text-on-surface-variant hover:text-error w-8 h-8 rounded-full shadow-sm flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Hero Image with interactive zoom trigger -->
+<div class="relative w-full aspect-square flex items-center justify-center cursor-crosshair overflow-hidden rounded-xl bg-[#0d1322]/80 border border-outline-variant/30" id="main-media-box">
+<img class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" data-alt="Ultra high-fidelity render of graphite Voltix SoundPulse Pro wireless active noise cancelling headphones with memory foam earcups and matte composite headband on clean technical background." id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEciuJZzPjGIHCSeJZbLTLUpNcXzHB9E3M8is9S9uiNCVIJe--LrbmWMWK_XLqyqpdYFV96T8-dCIA_ZgqLxIhzqP4k0JMvcDUBCiPMuj4lVRBDXs8Q8zOLi2jgbmYSiUbQdqpcQLr_voeaHHv3zjPb0QVtjlWjWVbKoWuWvXbk-N935HRI5RltLbnPrcwsVKVXggcXz4AYu2nwhPEAS1O4idbiSn072rhNAclqJU"/>
+<div class="absolute bottom-3 right-3 bg-[#0a0e17]/80 backdrop-blur-md text-on-surface-variant border border-outline-variant/30 font-label-mono text-[10px] px-2.5 py-1 rounded-md shadow-sm pointer-events-none flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">zoom_in</span> Roll to inspect micro-texture
+            </div>
+</div>
+<!-- Spec Quick Glance Ribbon on Image Foot -->
+<div class="mt-space-md grid grid-cols-4 gap-2 pt-space-sm bg-[#0d1322] border border-outline-variant/30 rounded-xl p-2.5 text-center">
+<div class="flex flex-col border-r border-outline-variant/20 last:border-none">
+<span class="font-headline-md text-[15px] font-bold text-primary-container">45 Hours</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">Battery Life</span>
+</div>
+<div class="flex flex-col border-r border-outline-variant/20 last:border-none">
+<span class="font-headline-md text-[15px] font-bold text-tertiary">Hybrid ANC</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">-42dB Attenuation</span>
+</div>
+<div class="flex flex-col border-r border-outline-variant/20 last:border-none">
+<span class="font-headline-md text-[15px] font-bold text-secondary">LDAC Lossless</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">990 kbps 24-bit</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-[15px] font-bold text-primary-fixed-dim">Bluetooth 5.4</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">Multipoint Pair</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Purchase & Customization Box -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Header & Identity Area -->
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-[11px] font-bold uppercase tracking-wider text-tertiary bg-tertiary-container/20 border border-tertiary/40 px-2.5 py-0.5 rounded shadow-[0_0_8px_rgba(0,225,251,0.2)]">
+              VOLTIX AUDIO ACCOUSTICS
+            </span>
+<div class="flex items-center gap-1 bg-[#1a233a] border border-outline-variant/30 px-2 py-0.5 rounded text-on-surface-variant font-label-mono text-[10px]">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified</span> Authentic Factory Direct
+            </div>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight leading-tight">
+            SoundPulse Pro Wireless Active Noise-Cancelling Headphones
+          </h1>
+<!-- Ratings & Q&A Metric -->
+<div class="flex items-center gap-space-sm flex-wrap text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-tertiary font-bold">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-mono font-bold ml-0.5 text-on-surface">4.9</span>
+</div>
+<span class="text-outline-variant font-bold">•</span>
+<a class="text-primary-container hover:text-tertiary hover:underline font-label-md text-label-md" href="#reviews-anchor">2,418 reviews</a>
+<span class="text-outline-variant font-bold">•</span>
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1" href="#qa-section">
+<span class="material-symbols-outlined text-[14px]">help</span> 184 Answered Questions
+            </a>
+</div>
+<!-- Pricing Block -->
+<div class="bg-[#0d1322] border border-outline-variant/30 p-space-md rounded-xl flex flex-col gap-1 mt-1">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<span class="font-headline-xl text-[32px] font-bold text-tertiary tracking-tight drop-shadow-[0_0_10px_rgba(0,225,251,0.3)]">$349.00</span>
+<span class="font-headline-md text-headline-md line-through text-outline">$429.00</span>
+<span class="bg-[#1a233a] text-tertiary border border-tertiary/40 font-label-mono text-[10px] font-bold px-2 py-0.5 rounded-full shadow-[0_0_8px_rgba(0,225,251,0.2)]">
+                Save $80 (19% Off)
+              </span>
+</div>
+<div class="flex items-center gap-1 text-body-sm font-body-sm text-on-surface-variant">
+<span>Or <strong class="text-on-surface">$29.08/mo</strong> for 12 mos with 0% APR via</span>
+<span class="bg-surface-container-highest text-tertiary-fixed font-label-mono text-[10px] px-1.5 py-0.5 rounded font-bold border border-outline-variant/40">VoltixPay</span>
+<button class="text-primary-container text-label-sm font-label-sm underline ml-1 hover:text-tertiary">Prequalify</button>
+</div>
+</div>
+<!-- Color Swatch Selector -->
+<div class="flex flex-col gap-space-xs mt-2">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-bold">Colorway:</span>
+<span class="text-tertiary font-semibold" id="selected-color-label">Matte Space Gray</span>
+</div>
+<div class="flex items-center gap-space-sm pt-1" id="swatch-group">
+<!-- Swatch 1 (Active) -->
+<button class="swatch-btn relative w-9 h-9 rounded-full bg-[#1a233a] p-0.5 flex items-center justify-center ring-2 ring-primary-container ring-offset-2 ring-offset-[#131b2e] shadow-[0_0_8px_rgba(56,189,248,0.5)]" onclick="selectColor('Matte Space Gray', this)">
+<span class="w-full h-full rounded-full bg-slate-700 shadow-inner"></span>
+</button>
+<!-- Swatch 2 -->
+<button class="swatch-btn relative w-9 h-9 rounded-full bg-[#1a233a] p-0.5 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" onclick="selectColor('Titanium Silver', this)">
+<span class="w-full h-full rounded-full bg-slate-300 shadow-inner"></span>
+</button>
+<!-- Swatch 3 -->
+<button class="swatch-btn relative w-9 h-9 rounded-full bg-[#1a233a] p-0.5 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" onclick="selectColor('Midnight Navy', this)">
+<span class="w-full h-full rounded-full bg-blue-950 shadow-inner"></span>
+</button>
+<!-- Swatch 4 -->
+<button class="swatch-btn relative w-9 h-9 rounded-full bg-[#1a233a] p-0.5 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" onclick="selectColor('Alpine White', this)">
+<span class="w-full h-full rounded-full bg-slate-200 shadow-inner"></span>
+</button>
+</div>
+</div>
+<!-- Audio Tier / Edition Selector -->
+<div class="flex flex-col gap-space-xs mt-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Package Audio Tier:</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="edition-choice" onchange="updateTier('standard')" type="radio" value="standard"/>
+<div class="p-space-sm rounded-xl bg-[#0d1322] border border-outline-variant/40 peer-checked:border-primary-container peer-checked:bg-[#1a233a] peer-checked:shadow-[0_0_14px_rgba(56,189,248,0.25)] transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Standard Hi-Res</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Includes Travel Hardcase + 3.5mm OFC cable</span>
+<span class="font-headline-md text-[14px] font-bold text-tertiary mt-1">$349.00</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="edition-choice" onchange="updateTier('studio')" type="radio" value="studio"/>
+<div class="p-space-sm rounded-xl bg-[#0d1322] border border-outline-variant/40 peer-checked:border-primary-container peer-checked:bg-[#1a233a] peer-checked:shadow-[0_0_14px_rgba(56,189,248,0.25)] transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Studio DAC Kit</span>
+<span class="bg-secondary/20 text-secondary border border-secondary/40 font-label-mono text-[10px] font-bold px-1.5 py-0.2 rounded">+ $79</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Adds Voltix 32-Bit USB-C Hi-Fi Amp DAC Dongle</span>
+<span class="font-headline-md text-[14px] font-bold text-tertiary mt-1">$428.00</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Protection Plan Toggle -->
+<div class="mt-2 bg-[#0d1322] border border-outline-variant/40 hover:border-tertiary/40 p-space-sm rounded-xl flex items-center justify-between gap-space-sm cursor-pointer transition-colors" onclick="toggleCarePlan()">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded text-primary-container bg-[#131b2e] border-outline-variant focus:ring-primary-container" id="care-checkbox" type="checkbox"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Voltix Care+ Protection</span>
+<span class="bg-tertiary-container/20 text-tertiary border border-tertiary/40 font-label-mono text-[10px] px-1.5 py-0.2 rounded font-bold">2-Year Full</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Includes accidental drops, spills &amp; fast express RMA</span>
+</div>
+</div>
+<span class="font-label-mono text-[12px] font-bold text-tertiary shrink-0">+$49.99</span>
+</div>
+<!-- Live Stock & Fast Fulfillment Status -->
+<div class="mt-2 flex items-center gap-2 p-2.5 bg-[#1a233a] border border-tertiary/30 rounded-xl text-on-surface shadow-[0_0_12px_rgba(0,225,251,0.15)]">
+<span class="relative flex h-3 w-3 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary shadow-[0_0_6px_#00e1fb]"></span>
+</span>
+<div class="font-label-md text-label-md">
+<span class="font-bold text-tertiary">In Stock.</span> Order within <span class="text-primary-fixed-dim font-mono font-bold" id="countdown-timer">02h 14m 33s</span> for <span class="underline font-bold text-on-surface">Free Next-Day Delivery</span>.
+            </div>
+</div>
+<!-- Action Controls Area -->
+<div class="flex flex-col gap-space-sm mt-3">
+<div class="flex items-center gap-space-sm">
+<!-- Quantity Stepper -->
+<div class="flex items-center bg-[#0d1322] border border-outline-variant/40 rounded-xl p-1 shrink-0">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface transition-colors" onclick="changeQty(-1)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<input class="w-10 text-center font-label-mono text-label-lg font-bold bg-transparent text-tertiary outline-none" id="item-quantity" readonly="" type="text" value="1"/>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-surface-container-highest text-on-surface transition-colors" onclick="changeQty(1)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Primary Add to Cart -->
+<button class="flex-1 bg-primary-container text-on-primary hover:bg-tertiary hover:text-on-tertiary font-headline-md text-[14px] font-bold py-3 px-space-md rounded-xl shadow-[0_0_18px_rgba(56,189,248,0.4)] hover:shadow-[0_0_24px_rgba(0,225,251,0.6)] flex items-center justify-center gap-2 transition-all active:scale-[0.98]" onclick="triggerCartToast()">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+</div>
+<!-- Secondary 1-Click Buy Now -->
+<button class="w-full bg-[#1a233a] text-on-surface border border-outline-variant/50 hover:border-primary-container hover:bg-[#262a34] font-headline-md text-[14px] font-bold py-3 px-space-md rounded-xl shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center justify-center gap-2 transition-all group">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-hover:scale-110 transition-transform">bolt</span>
+<span>Buy Now with 1-Click</span>
+</button>
+<!-- Utility Quick Links: Wishlist & Compare -->
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<button class="flex items-center gap-1 hover:text-tertiary transition-colors py-1">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+<span>Save to Wishlist</span>
+</button>
+<button class="flex items-center gap-1 hover:text-tertiary transition-colors py-1">
+<span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+<span>Add to Audio Compare</span>
+</button>
+<button class="flex items-center gap-1 hover:text-tertiary transition-colors py-1">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Share Spec Sheet</span>
+</button>
+</div>
+</div>
+<!-- Reassurance Badges -->
+<div class="grid grid-cols-3 gap-2 pt-3 mt-1 text-center bg-[#0d1322] border border-outline-variant/30 rounded-xl p-2 font-label-mono text-[10px] text-on-surface-variant">
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_shipping</span>
+<span>Free Delivery</span>
+</div>
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">published_with_changes</span>
+<span>30-Day Returns</span>
+</div>
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">shield</span>
+<span>2-Year Warranty</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Frequently Bought Together Bundle Module -->
+<div class="w-full bg-[#0d1322] border-y border-surface-container/60 py-space-xl mt-space-md">
+<div class="max-w-[1360px] mx-auto px-margin">
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex flex-col gap-space-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<span class="font-label-mono text-[11px] font-bold uppercase tracking-wider text-tertiary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#00e1fb]"></span> Power Your Setup</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">Frequently Bought Together</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tech buyers usually bundle these headphones with the Voltix desktop audio ecosystem.</p>
+</div>
+<div class="flex flex-col lg:flex-row items-center gap-space-lg">
+<!-- Items List with Plus Icons -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md flex-1 w-full justify-between">
+<!-- Item 1 (Main Product) -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto p-2 rounded-xl bg-[#0d1322]/80 border border-outline-variant/30">
+<input checked="" class="w-4 h-4 rounded text-primary-container bg-[#131b2e] border-outline-variant" disabled="" type="checkbox"/>
+<div class="w-16 h-16 rounded-lg bg-[#1a233a] border border-outline-variant/30 p-1 shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Miniature icon preview of Voltix SoundPulse Pro wireless active noise cancelling headphones in graphite gray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZh8k-kSZwdXmbmd3GauNFW7kqfmH_IDsda_6WAiEEfgFMM2A_kguMhK7w6lNVwRDo3a5_hl9noxQ2-a2v37bkBQSxRE2CJlmUT4j5AgFvTRaahWkYceZ8rU7BCkoc_xN6QhjLylHRT5BpNh97nwyz5T0jesaqFWuV0GH2CyRvaH67Kvn0gvtwBBrQH1sXVFSX6LVvKGSLjhRDitvctyrCQmLdOWzyPI93tKbHyyg"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">This Item: SoundPulse Pro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Over-Ear ANC Headphone</span>
+<span class="font-headline-md text-[14px] font-bold text-tertiary mt-0.5">$349.00</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[24px] hidden sm:block">add</span>
+<!-- Item 2 (Headphone Stand & Wireless Charger) -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto p-2 rounded-xl bg-[#0d1322]/80 border border-outline-variant/30">
+<input checked="" class="w-4 h-4 rounded text-primary-container bg-[#131b2e] border-outline-variant focus:ring-primary-container cursor-pointer" id="fbt-item-2" onchange="calculateBundleTotal()" type="checkbox"/>
+<div class="w-16 h-16 rounded-lg bg-[#1a233a] border border-outline-variant/30 p-1 shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Anodized aluminum headphone desk stand with integrated 15W Qi fast charging base station in matching slate graphite tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy4bHh1eXkmvya1gXPa65mHtYRsOGuXzKGWqqqwQFMSg-l-EsLfCeuhzZyyMZKZH4wASgHvIxv68KgKqhJD9bJFxdOwjHda-nqG4Vjf2zxbM26kVdSiCKqzZIVIvtW5AXeIXEweKqPOFHSZ5-VQgXGR3ipNfLXYFXzmq5XVxgreAm8tyvawZkKMVoN33LJr2rgzqHvCTg5MrJbJEVZX8PFQqY_s3H19avId5VbKho"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Voltix Apex Desk Stand</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15W MagFast Qi Charger Base</span>
+<span class="font-headline-md text-[14px] font-bold text-on-surface mt-0.5">$59.99</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[24px] hidden sm:block">add</span>
+<!-- Item 3 (Braided Balanced Cable) -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto p-2 rounded-xl bg-[#0d1322]/80 border border-outline-variant/30">
+<input checked="" class="w-4 h-4 rounded text-primary-container bg-[#131b2e] border-outline-variant focus:ring-primary-container cursor-pointer" id="fbt-item-3" onchange="calculateBundleTotal()" type="checkbox"/>
+<div class="w-16 h-16 rounded-lg bg-[#1a233a] border border-outline-variant/30 p-1 shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Silver plated oxygen-free copper 4.4mm balanced audio cable with gold plated termination jacks on neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKUwcGeW66r5zL9ZO87q25lAnz8-FJ5ccXJ3j-_bSxFk0BhHGnPD-onDcKCIwx-m0SuYTHdPv0f05mzyciUMocTBAbghItRDl67NuJOb7abKuchDknapiS5dMrLQzUrmEz1USb-dduki2ubpzSQ7gk62NHOGpJWmEmLDHmpE1F9IE7uM6FS3UeuiP0imPfv4eHCBjA4RYnziQv1l6qgLHuy2nk3hQp1aHQUP4wmP8"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">UltraFlux 4.4mm Cable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Silver Plated Balanced Jack</span>
+<span class="font-headline-md text-[14px] font-bold text-on-surface mt-0.5">$39.00</span>
+</div>
+</div>
+</div>
+<!-- Bundle Action Summary Box -->
+<div class="w-full lg:w-72 bg-[#0d1322] border border-outline-variant/40 p-space-md rounded-xl flex flex-col gap-2 shrink-0 shadow-inner">
+<div class="font-label-mono text-[11px] text-on-surface-variant uppercase font-bold tracking-wider">Bundle Price (3 Items)</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-[28px] font-bold text-tertiary drop-shadow-[0_0_10px_rgba(0,225,251,0.3)]" id="bundle-total-price">$447.99</span>
+<span class="font-label-mono text-outline line-through text-[13px]">$498.00</span>
+</div>
+<span class="font-label-mono text-[11px] text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> Bundle discount: -$50.01 applied
+              </span>
+<button class="w-full mt-1 bg-primary-container hover:bg-tertiary text-on-primary hover:text-on-tertiary font-headline-md text-[13px] font-bold py-2.5 px-3 rounded-lg shadow-[0_0_14px_rgba(56,189,248,0.4)] flex items-center justify-center gap-1.5 transition-all" onclick="triggerCartToast('Complete 3-Piece Audio Bundle added to cart!')">
+<span class="material-symbols-outlined text-[18px]">shopping_cart_checkout</span>
+<span>Add All 3 to Cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Technical Information & Tabs Section -->
+<div class="max-w-[1360px] mx-auto px-margin py-space-xl w-full">
+<!-- Tab Controls -->
+<div class="flex items-center gap-space-sm border border-outline-variant/40 bg-[#0d1322] p-1.5 rounded-2xl w-full sm:w-auto overflow-x-auto shadow-sm">
+<button class="tab-button bg-[#131b2e] text-tertiary border border-tertiary/40 shadow-[0_0_12px_rgba(0,225,251,0.25)] font-label-lg text-label-lg font-bold px-space-md py-2.5 rounded-xl whitespace-nowrap transition-all" onclick="switchTab('overview', this)">
+        Overview &amp; Highlights
+      </button>
+<button class="tab-button text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold px-space-md py-2.5 rounded-xl whitespace-nowrap transition-all" onclick="switchTab('specs', this)">
+        Technical Specifications
+      </button>
+<button class="tab-button text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold px-space-md py-2.5 rounded-xl whitespace-nowrap transition-all" onclick="switchTab('box', this)">
+        In the Box
+      </button>
+<button class="tab-button text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg font-bold px-space-md py-2.5 rounded-xl whitespace-nowrap transition-all" id="reviews-anchor" onclick="switchTab('reviews', this)">
+        Customer Reviews (4.9/5)
+      </button>
+</div>
+<!-- TAB 1: OVERVIEW & HIGHLIGHTS -->
+<div class="tab-pane flex flex-col gap-space-xl mt-space-lg" id="tab-overview">
+<!-- Bento Highlights Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Bento Card 1: Dual-Core Acoustic Processor -->
+<div class="bg-[#131b2e] border border-outline-variant/40 hover:border-primary-container/60 p-space-lg rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.5)] flex flex-col justify-between transition-all group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 border border-primary-container/40 text-primary-container flex items-center justify-center mb-space-md group-hover:shadow-[0_0_12px_rgba(56,189,248,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]">graphic_eq</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-xs group-hover:text-tertiary transition-colors">Dual-Driver Biocellulose Arrays</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Custom-tuned 40mm bio-cellulose dynamic drivers partnered with ultra-light planar magnetic tweeters deliver transparent transients up to 45kHz without acoustic distortion.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-[#0d1322] border border-outline-variant/30 p-2.5 rounded-xl font-label-mono text-[11px] text-on-surface-variant">
+<span class="font-bold text-tertiary">THD &lt; 0.05%</span> at 100dB SPL benchmark clarity
+          </div>
+</div>
+<!-- Bento Card 2: Adaptive Active Noise Cancelling -->
+<div class="bg-[#131b2e] border border-outline-variant/40 hover:border-secondary/60 p-space-lg rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.5)] flex flex-col justify-between transition-all group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary/20 border border-secondary/40 text-secondary flex items-center justify-center mb-space-md group-hover:shadow-[0_0_12px_rgba(192,193,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]">hearing</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-xs group-hover:text-secondary transition-colors">Adaptive Hybrid ANC 4.0</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Six external beamforming microphones calculate background pressure 380,000 times per second, dynamically tailoring out jet turbines and urban chatter.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-[#0d1322] border border-outline-variant/30 p-2.5 rounded-xl font-label-mono text-[11px] text-on-surface-variant">
+<span class="font-bold text-secondary">Up to -42dB</span> broadband ambient noise reduction
+          </div>
+</div>
+<!-- Bento Card 3: Spatial Audio with 6-Axis Gyro -->
+<div class="bg-[#131b2e] border border-outline-variant/40 hover:border-tertiary/60 p-space-lg rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.5)] flex flex-col justify-between transition-all group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary/20 border border-tertiary/40 text-tertiary flex items-center justify-center mb-space-md group-hover:shadow-[0_0_12px_rgba(0,225,251,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]">spatial_audio_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-xs group-hover:text-tertiary transition-colors">Dynamic Spatial Head Tracking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Integrated high-speed IMU motion sensors lock the 360-degree soundstage to your workstation display, creating an uncanny acoustic room simulator.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-[#0d1322] border border-outline-variant/30 p-2.5 rounded-xl font-label-mono text-[11px] text-on-surface-variant">
+<span class="font-bold text-tertiary">Dolby Atmos &amp; Sony 360</span> Reality Audio Certified
+          </div>
+</div>
+</div>
+<!-- Feature Visual Showcase Section -->
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-mono text-[11px] font-bold uppercase tracking-wider text-tertiary flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#00e1fb]"></span> Acoustic Engineering</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Engineered for 12-Hour Continuous Studio Sessions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Constructed with aeronautical-grade magnesium sliders, protein memory foam ear seals, and a ventilated pressure-relief crown headband. SoundPulse Pro balances weight distribution to eliminate top-of-head fatigue.
+          </p>
+<div class="grid grid-cols-2 gap-space-md pt-2">
+<div class="bg-[#0d1322] border border-outline-variant/30 p-3 rounded-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-container text-[24px]">weight</span>
+<div>
+<div class="font-headline-md text-[14px] font-bold text-on-surface">254 Grams</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Featherlight Ergonomics</div>
+</div>
+</div>
+<div class="bg-[#0d1322] border border-outline-variant/30 p-3 rounded-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[24px]">battery_charging_full</span>
+<div>
+<div class="font-headline-md text-[14px] font-bold text-on-surface">Quick Juice</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">10m Charge = 5h Playback</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative w-full h-80 rounded-xl overflow-hidden border border-outline-variant/40 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Technical exploded diagram view of headphone internal acoustic drivers, biocellulose diaphragm, copper voice coil, and neodymium magnets on slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGU0AJcuLrpuLe2-C0nxMcvRXAxuD4gVaKxrPTty3ujPgxaQrGda6LUto9ulL1Ly-G7YaajJmqgm3wtQsGOstPh2CPAIJqMT6yzSMMhCN8-A2EyZ3ytB5_OXIaipMLKCghDY9tH0jblexSbixagl4M6mf44SQObEksFrW7917woCit9b2q-EUigfIuZuZbd76yvrUIPGSDUKjik4pnzA6TlyvKRzpngWfSpA9aeKE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131b2e]/60 via-transparent to-transparent pointer-events-none"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: TECHNICAL SPECIFICATIONS -->
+<div class="tab-pane hidden flex flex-col gap-space-lg mt-space-lg" id="tab-specs">
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+<div class="flex items-center justify-between mb-space-md flex-wrap gap-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Full Hardware &amp; Acoustic Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified technical measurements tested in Voltix Sound Labs anechoic chamber.</p>
+</div>
+<button class="bg-[#0d1322] hover:bg-[#1a233a] border border-outline-variant/40 text-tertiary font-label-md text-label-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Laboratory PDF Sheet</span>
+</button>
+</div>
+<!-- Spec Two-Column Clean Table -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-xl gap-y-2">
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Transducer Principle</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">Dynamic 40mm Biocellulose + Planar Micro-Tweeter</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Acoustic Frequency Response</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">4 Hz – 45,000 Hz</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Active Noise Cancellation</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">Hybrid Feedforward + Feedback (-42dB)</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Wireless Connectivity</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">Bluetooth 5.4 LE Audio • Class 1 Range</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Supported Audio Codecs</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">LDAC, aptX Lossless, AAC, SBC, LC3</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Nominal Impedance</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">32 Ω (Active) / 48 Ω (Passive Wired)</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Total Harmonic Distortion (THD)</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">&lt; 0.05% (1 kHz, 100 dB SPL)</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Battery Capacity &amp; Type</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">820 mAh Lithium-Polymer (45h ANC on)</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Microphone Array</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">6x MEMS with AI Wind Shielding</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">Chassis Net Weight</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">254 g (8.96 oz)</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">I/O Ports</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">USB-C (Audio in + PD Charge) • 3.5mm Aux</span>
+</div>
+<div class="flex items-center justify-between py-3 px-3 bg-[#0d1322] border border-outline-variant/30 rounded-xl">
+<span class="font-label-md text-label-md font-bold text-on-surface">App Companion Support</span>
+<span class="font-body-sm text-body-sm text-tertiary font-mono">Voltix SoundHub (iOS, Android, macOS, Win)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: IN THE BOX -->
+<div class="tab-pane hidden flex flex-col gap-space-lg mt-space-lg" id="tab-box">
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-space-sm">Everything Included in the Package</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">Unbox a studio-ready setup straight out of the box with zero additional adapters needed.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="bg-[#0d1322] border border-outline-variant/30 p-space-md rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-xl bg-[#1a233a] border border-outline-variant/40 flex items-center justify-center mb-2 shadow-sm text-tertiary">
+<span class="material-symbols-outlined text-[32px]">headphones</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">SoundPulse Pro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Headphones Unit</span>
+</div>
+<div class="bg-[#0d1322] border border-outline-variant/30 p-space-md rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-xl bg-[#1a233a] border border-outline-variant/40 flex items-center justify-center mb-2 shadow-sm text-primary-container">
+<span class="material-symbols-outlined text-[32px]">cases</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Travel Hardcase</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ballistic Nylon Shell</span>
+</div>
+<div class="bg-[#0d1322] border border-outline-variant/30 p-space-md rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-xl bg-[#1a233a] border border-outline-variant/40 flex items-center justify-center mb-2 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[32px]">cable</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">1.2m OFC Cable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gold Plated 3.5mm</span>
+</div>
+<div class="bg-[#0d1322] border border-outline-variant/30 p-space-md rounded-xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-xl bg-[#1a233a] border border-outline-variant/40 flex items-center justify-center mb-2 shadow-sm text-tertiary">
+<span class="material-symbols-outlined text-[32px]">usb</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">USB-C Charge Lead</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">60W High-Speed Sync</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: CUSTOMER REVIEWS -->
+<div class="tab-pane hidden flex flex-col gap-space-lg mt-space-lg" id="tab-reviews">
+<div class="bg-[#131b2e] border border-outline-variant/40 p-space-lg rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center pb-space-lg border-b border-surface-container/60">
+<!-- Big Score Scoreboard -->
+<div class="md:col-span-4 flex flex-col items-center justify-center p-space-md bg-[#0d1322] border border-outline-variant/30 rounded-2xl text-center">
+<span class="font-headline-xl text-[48px] font-bold text-tertiary drop-shadow-[0_0_12px_rgba(0,225,251,0.4)] leading-tight">4.9</span>
+<div class="flex items-center text-tertiary my-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Based on 2,418 Verified Buyers</span>
+<span class="font-label-mono text-[11px] text-tertiary font-bold mt-1">98% would recommend to an audio engineer</span>
+</div>
+<!-- Progress Bars Breakdown -->
+<div class="md:col-span-8 flex flex-col gap-2">
+<div class="flex items-center gap-space-sm text-label-mono text-[11px]">
+<span class="w-12 text-on-surface font-bold">5 Stars</span>
+<div class="flex-1 h-2 rounded-full bg-[#0d1322] border border-outline-variant/30 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full shadow-[0_0_8px_rgba(56,189,248,0.6)]" style="width: 91%"></div>
+</div>
+<span class="w-10 text-right text-on-surface-variant">91%</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-mono text-[11px]">
+<span class="w-12 text-on-surface font-bold">4 Stars</span>
+<div class="flex-1 h-2 rounded-full bg-[#0d1322] border border-outline-variant/30 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 7%"></div>
+</div>
+<span class="w-10 text-right text-on-surface-variant">7%</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-mono text-[11px]">
+<span class="w-12 text-on-surface font-bold">3 Stars</span>
+<div class="flex-1 h-2 rounded-full bg-[#0d1322] border border-outline-variant/30 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 1.5%"></div>
+</div>
+<span class="w-10 text-right text-on-surface-variant">1.5%</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-mono text-[11px]">
+<span class="w-12 text-on-surface font-bold">2 Stars</span>
+<div class="flex-1 h-2 rounded-full bg-[#0d1322] border border-outline-variant/30 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 0.3%"></div>
+</div>
+<span class="w-10 text-right text-on-surface-variant">&lt;1%</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-mono text-[11px]">
+<span class="w-12 text-on-surface font-bold">1 Star</span>
+<div class="flex-1 h-2 rounded-full bg-[#0d1322] border border-outline-variant/30 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 0.2%"></div>
+</div>
+<span class="w-10 text-right text-on-surface-variant">&lt;1%</span>
+</div>
+</div>
+</div>
+<!-- Sample High-Credibility Review Cards -->
+<div class="flex flex-col gap-space-md pt-space-md">
+<div class="p-space-md rounded-xl bg-[#0d1322] border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-label-mono text-[12px] shadow-[0_0_8px_rgba(56,189,248,0.5)]">
+                  MR
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Marcus R.</span>
+<span class="bg-tertiary-container/20 text-tertiary border border-tertiary/40 font-label-mono text-[10px] px-1.5 rounded font-bold">Verified Studio Mix Engineer</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reviewed in United States on October 12, 2024</span>
+</div>
+</div>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="font-headline-md text-[15px] font-bold text-on-surface">The LDAC clarity and sub-bass tight control blows Sony and Bose away</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              I spend 8 to 10 hours a day mastering tracks. Most consumer ANC cans apply horrific DSP mid-bass bloat to fake punch. The SoundPulse Pro biocellulose drivers are remarkably linear. Pairing with LDAC over Android 14 provides near-lossless clarity that translates reliably to my monitors.
+            </p>
+</div>
+<div class="p-space-md rounded-xl bg-[#0d1322] border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary font-bold flex items-center justify-center font-label-mono text-[12px]">
+                  SL
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Samantha L.</span>
+<span class="bg-[#1a233a] text-secondary border border-secondary/40 font-label-mono text-[10px] px-1.5 rounded font-bold">Verified Buyer</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reviewed in Germany on November 04, 2024</span>
+</div>
+</div>
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="font-headline-md text-[15px] font-bold text-on-surface">45-hour battery is real. Survived cross-continental flight with juice to spare</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Flew Frankfurt to Singapore with ANC set to full adaptive. Earcups remained breathable and didn't squeeze my glasses frame. Multipoint switching between iPad Pro and phone is seamless.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive 360 Spin Modal -->
+<div class="fixed inset-0 z-50 bg-[#090d16]/80 backdrop-blur-md hidden items-center justify-center p-4" id="modal-360">
+<div class="bg-[#131b2e] border border-outline-variant/50 max-w-2xl w-full rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col">
+<div class="p-space-md flex items-center justify-between bg-[#0d1322] border-b border-surface-container/60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[24px]">360</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Interactive 360° Acoustic Viewer</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-[#1a233a] hover:bg-surface-container-highest border border-outline-variant/40 flex items-center justify-center text-on-surface transition-colors" onclick="toggle360Modal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col items-center justify-center bg-[#131b2e] text-center">
+<div class="w-72 h-72 relative flex items-center justify-center mb-space-md bg-[#0d1322] border border-outline-variant/30 rounded-2xl">
+<img class="w-full h-full object-contain p-4" data-alt="Rotating 360 degree 3D render of Voltix SoundPulse Pro wireless headphones rotating against a neutral high contrast studio background." id="spin-360-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbx8D_Jn_nsb27vFYRT4UO3_2K0irFhbDjBvqvhMfe_SJj0tSaCsLxb5osvfKTq2-qliIkTqYmf7i6A_IL4fSUJk2lTgPmDMaH8-4hht0Vj4YFHVcidkb5ei9i8NHr0qEPYUcP-e48y8VcU7vTeBzwFe32Tg1J5TiNaOaLHWVGs0EX377WyQYerkaU3mW0TEJWAZWIGJD9iEuKU_bw6x01SYI3GlvmlQ16NKu2bmU"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-space-sm">Drag slider left/right to rotate hardware chassis</p>
+<input class="w-full max-w-md accent-primary-container cursor-ew-resize" max="360" min="0" oninput="handleSpinSlider(this.value)" type="range" value="0"/>
+</div>
+<div class="p-space-md bg-[#0d1322] border-t border-surface-container/60 flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-label-mono text-[11px]">AR quick-look ready for WebXR on iOS &amp; Android</span>
+<button class="bg-primary-container text-on-primary hover:bg-tertiary hover:text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-xl font-bold transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)]" onclick="toggle360Modal()">Done</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification for Add to Cart -->
+<div class="fixed bottom-6 right-6 z-50 bg-[#131b2e] border border-tertiary/60 text-on-surface px-space-md py-3 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.8)] flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-[0_0_8px_rgba(56,189,248,0.8)]">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-tertiary" id="toast-title">Added to Cart!</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toast-desc">Voltix SoundPulse Pro is in your technical cart.</span>
+</div>
+</div>
+<!-- Client-side Logic Script for PDP Interactions -->
+<script>
+    // Tab switching
+    function switchTab(tabId, el) {
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.tab-button').forEach(b => {
+        b.classList.remove('bg-[#131b2e]', 'text-tertiary', 'border', 'border-tertiary/40', 'shadow-[0_0_12px_rgba(0,225,251,0.25)]');
+        b.classList.add('text-on-surface-variant');
+      });
+
+      const target = document.getElementById('tab-' + tabId);
+      if (target) target.classList.remove('hidden');
+
+      el.classList.remove('text-on-surface-variant');
+      el.classList.add('bg-[#131b2e]', 'text-tertiary', 'border', 'border-tertiary/40', 'shadow-[0_0_12px_rgba(0,225,251,0.25)]');
+    }
+
+    // Thumbnail switcher
+    function switchImage(index, btn) {
+      document.querySelectorAll('.thumb-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-primary-container', 'shadow-[0_0_12px_rgba(56,189,248,0.3)]');
+        b.classList.add('border-outline-variant/40', 'opacity-70');
+      });
+      btn.classList.add('border-2', 'border-primary-container', 'shadow-[0_0_12px_rgba(56,189,248,0.3)]');
+      btn.classList.remove('border-outline-variant/40', 'opacity-70');
+    }
+
+    // Swatch selection
+    function selectColor(colorName, btn) {
+      document.getElementById('selected-color-label').innerText = colorName;
+      document.querySelectorAll('.swatch-btn').forEach(b => {
+        b.classList.remove('ring-2', 'ring-primary-container', 'ring-offset-2', 'ring-offset-[#131b2e]', 'shadow-[0_0_8px_rgba(56,189,248,0.5)]');
+        b.classList.add('opacity-80');
+      });
+      btn.classList.remove('opacity-80');
+      btn.classList.add('ring-2', 'ring-primary-container', 'ring-offset-2', 'ring-offset-[#131b2e]', 'shadow-[0_0_8px_rgba(56,189,248,0.5)]');
+    }
+
+    // Edition / Tier update
+    let selectedTier = 'standard';
+    function updateTier(tier) {
+      selectedTier = tier;
+    }
+
+    // Quantity stepper
+    function changeQty(delta) {
+      const input = document.getElementById('item-quantity');
+      let val = parseInt(input.value, 10) || 1;
+      val = Math.max(1, Math.min(10, val + delta));
+      input.value = val;
+    }
+
+    // Care plan checkbox toggle
+    function toggleCarePlan() {
+      const cb = document.getElementById('care-checkbox');
+      cb.checked = !cb.checked;
+    }
+
+    // 360 Spin Modal
+    function toggle360Modal() {
+      const modal = document.getElementById('modal-360');
+      if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function handleSpinSlider(deg) {
+      const img = document.getElementById('spin-360-preview');
+      img.style.transform = `rotate(${deg * 0.15}deg)`;
+    }
+
+    // Bundle calculator
+    function calculateBundleTotal() {
+      let base = 349.00;
+      if (document.getElementById('fbt-item-2').checked) base += 59.99;
+      if (document.getElementById('fbt-item-3').checked) base += 39.00;
+      document.getElementById('bundle-total-price').innerText = '$' + base.toFixed(2);
+    }
+
+    // Live countdown timer simulator
+    (function initCountdown() {
+      let hours = 2, minutes = 14, seconds = 33;
+      setInterval(() => {
+        if (seconds > 0) {
+          seconds--;
+        } else {
+          seconds = 59;
+          if (minutes > 0) {
+            minutes--;
+          } else {
+            minutes = 59;
+            if (hours > 0) hours--;
+          }
+        }
+        const str = `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
+        const timerEl = document.getElementById('countdown-timer');
+        if (timerEl) timerEl.innerText = str;
+      }, 1000);
+    })();
+
+    // Cart Toast
+    function triggerCartToast(customMsg) {
+      const toast = document.getElementById('cart-toast');
+      if (customMsg) {
+        document.getElementById('toast-title').innerText = 'Success!';
+        document.getElementById('toast-desc').innerText = customMsg;
+      }
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+  </script>
+</div></main><footer class="w-full bg-[#0a0e17] border-t border-surface-container mt-space-xl text-on-surface"><div class="bg-[#0d1322] border-b border-surface-container-high/40 py-space-xl"><div class="max-w-[1360px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-[#131b2e] border border-outline-variant/40 flex items-center justify-center text-tertiary shadow-[0_0_12px_rgba(0,225,251,0.2)]"><span class="material-symbols-outlined text-[28px]">verified</span></div><div><div class="font-label-lg text-label-lg text-on-surface font-bold">100% Authorized Dealer</div><div class="font-body-sm text-body-sm text-on-surface-variant">Direct manufacturer supply &amp; serial validation</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-[#131b2e] border border-outline-variant/40 flex items-center justify-center text-secondary shadow-[0_0_12px_rgba(192,193,255,0.2)]"><span class="material-symbols-outlined text-[28px]">published_with_changes</span></div><div><div class="font-label-lg text-label-lg text-on-surface font-bold">30-Day Hassle-Free Returns</div><div class="font-body-sm text-body-sm text-on-surface-variant">Full refunds &amp; complimentary return labels</div></div></div><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-xl bg-[#131b2e] border border-outline-variant/40 flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(56,189,248,0.2)]"><span class="material-symbols-outlined text-[28px]">shield</span></div><div><div class="font-label-lg text-label-lg text-on-surface font-bold">2-Year Hardware Warranty</div><div class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive parts and labor coverage included</div></div></div></div></div></div><div class="max-w-[1360px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl"><div class="lg:col-span-4"><div class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight uppercase mb-space-xs flex items-center gap-2">VOLTIX <span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#00e1fb]"></span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-sm">Engineered for tech enthusiasts and prosumers. Delivering cutting-edge computing gear and consumer electronics with verified benchmark clarity.</p><div class="bg-[#131b2e] border border-outline-variant/40 p-space-md rounded-2xl max-w-md shadow-lg"><div class="font-label-md text-label-md text-on-surface mb-1 font-bold">Unlock 10% Off Your Next Rig</div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Subscribe for drops, technical alerts, and seasonal rebates.</p><div class="flex gap-space-xs"><input class="flex-1 bg-[#0d1322] px-space-md py-2 rounded-xl font-body-sm text-body-sm border border-outline-variant/50 focus:border-tertiary text-on-surface outline-none" placeholder="Enter your technical work email" type="email"/><button class="bg-primary-container text-on-primary px-space-md py-2 rounded-xl font-label-md text-label-md hover:bg-tertiary hover:text-on-tertiary transition-all shadow-[0_0_10px_rgba(56,189,248,0.3)]">Subscribe</button></div></div></div><div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-on-surface font-bold">Shop</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="laptops-and-computing" href="#">Laptops &amp; Ultrabooks</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="smartphones" href="#">Flagship Smartphones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="gaming-gear" href="#">PC Components &amp; GPUs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="audio-and-headphones" href="#">Audiophile DACs &amp; Monitors</a><a class="font-body-sm text-body-sm text-tertiary font-medium hover:underline" data-path="deals-and-clearance" href="#">Clearance Depot</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-on-surface font-bold">Support</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Order Tracking &amp; Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Warranty Claims &amp; RMA</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Driver &amp; BIOS Downloads</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Live System Diagnostic</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Trade-in Estimator</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-on-surface font-bold">Company</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">About VOLTIX</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Enterprise Procurement</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Hardware Reviews Blog</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Careers (Hardware Labs)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" data-path="store-locator" href="#">Store Network</a></div><div class="flex flex-col gap-space-sm"><div class="font-label-lg text-label-lg text-on-surface font-bold">Legal</div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Compliance &amp; Recalls</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Cookie Preferences</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Security Whitepaper</a></div></div></div></div><div class="bg-[#0a0e17] border-t border-surface-container/60 py-space-md"><div class="max-w-[1360px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>© 2024 VOLTIX Electronics Inc. All rights reserved. High-Precision Gear.</span></div><div class="flex items-center gap-space-md text-label-mono text-[10px]"><span class="px-2 py-1 bg-[#131b2e] rounded border border-outline-variant/40 font-bold text-on-surface">Apple Pay</span><span class="px-2 py-1 bg-[#131b2e] rounded border border-outline-variant/40 font-bold text-on-surface">Google Pay</span><span class="px-2 py-1 bg-[#131b2e] rounded border border-outline-variant/40 font-bold text-on-surface">VISA</span><span class="px-2 py-1 bg-[#131b2e] rounded border border-outline-variant/40 font-bold text-on-surface">Mastercard</span><span class="px-2 py-1 bg-[#131b2e] rounded border border-outline-variant/40 font-bold text-on-surface">Klarna</span></div></div></div></footer><script src="../../js/voltix.js"></script></body></html>
